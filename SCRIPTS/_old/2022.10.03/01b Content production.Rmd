@@ -1,0 +1,614 @@
+---
+title:  "<br> Cost of Living indicators"
+date: "`r format(Sys.Date(),'%B %Y')`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    css:  !expr "here::here('FORMATTING','GLAstyle.css')"
+    includes:
+      in_header: !expr "here::here('FORMATTING','favicon.html')"
+      before_body: !expr "here::here('FORMATTING','header.html')"
+      after_body: !expr "here::here('FORMATTING','footer.html')"
+---
+
+```{r setup, include=FALSE}
+  
+  knitr::opts_chunk$set(echo = TRUE,scipen=999)
+  knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+  
+  #################################################################
+  ###  Load packages and set paths
+  #################################################################
+
+  library("here") # To set project folder dynamically
+  
+    # Version of GLA theme for charting
+  gla_theme_type <- "default"
+  theme_set(theme_gla(gla_theme = gla_theme_type))
+  
+```
+
+```{r, dates ,echo=FALSE}
+  ### Create all the figures needed for the section below
+  # Name format:
+  # _d_: difference, _p_: difference in percent, _pp_: difference in percentage points, _uk: UK level stat, London otherwise
+  
+  # Paye
+  paye_d_month <- value_form(pull_dtpt(dt=paye_stats,flt='date_day == max(date_day) & geography_name=="London" & measure_name=="emps"',vr="d_change_mom"),s= signif_thous)
+  
+  paye_p_month <- perc_form(pull_dtpt(dt=paye_stats,flt='date_day == max(date_day) & geography_name=="London" & measure_name=="emps"',vr="p_change_mom"),d = digits_perc)
+  
+  paye_previous_month <- paye_stats  %>% mutate(lag_month = lag(date_day, n = 1)) %>% mutate(lag_month2 = format(lag_month, '%B')) %>% filter( date_day == max(date_day)) %>%  pull(lag_month2)
+  
+  paye_p_feb20 <- perc_form(pull_dtpt(dt=paye_stats,flt='date_day == max(date_day) & geography_name=="London" & measure_name=="emps"',vr="p_change_feb20"),d = digits_perc)
+
+  
+  # CPIH
+  
+  cpih_last_month_form <- format(cpih_last_month,"%B %Y")
+
+```
+
+<hr  width="100%" style="background-color: rgb(134,139,142);height: 1.0px;margin: 0;"/>
+Contact: [Ammar Ljubijankic Kutasi](mailto:ammar.ljubijankic@london.gov.uk)
+<!-- Summary of findings - MANUALLY ADJUST -->
+<br/>
+
+
+## RTI pay {.tabset}
+
+<br/>
+
+<a href="#top">Back to top</a>
+
+## Annual real change
+
+
+``` {r real annual change, echo=FALSE, out.width='100%',fig.cap = figure_cap}
+pay_yoy_cpih_data <- cpih_pay_stats %>%
+    select(date_day,cpih_yoy,p_change_yoy,geography_name,pay_type) %>%
+  mutate(cpih_yoy=-cpih_yoy) %>% #to model impact from inflation
+    pivot_longer(cols=contains("yoy"),names_to = "measure_name",values_to="measure_value") %>%
+    mutate(measure_desc=case_when(measure_name=="p_change_yoy" & pay_type=="nominal" ~ "Nominal pay",
+                                  measure_name=="p_change_yoy" & pay_type=="real" ~ "Real pay",
+                                  measure_name=="cpih_yoy" ~ "CPIH"),
+           measure_rank=case_when(measure_name=="p_change_yoy"  ~ 1,
+                                  measure_name=="cpih_yoy" ~ 2))
+
+  measure_order <- c("Nominal pay","Real pay","CPIH") #Ensuring right order of stacked bars
+  named_groups <- c("Nominal pay","Real pay","CPIH")
+  pal <- gla_pal(palette_type = "highlight",n=c(2,1)) 
+  pal_named <- setNames(object=pal,nm=named_groups)
+  
+  real_nom_yoy_chart <- pay_yoy_cpih_data %>%
+    filter(date_day>="2020-01-01" & date_day<=cpih_last_month & geography_name=="London") %>% 
+    arrange(date_day,pay_type,measure_rank) %>% 
+    ggplot(aes())  +
+    geom_bar(data=. %>% filter(pay_type=="nominal"),
+             aes(x = date_day, y = measure_value ,
+                 colour=factor(measure_desc,levels = measure_order),
+                 fill=factor(measure_desc,levels = measure_order),
+                 text = paste0(format(date_day,'%B %Y'), "\n",
+                           measure_desc,", effect on real pay: ", perc_form(100*measure_value,d=1),"%")),
+             stat='identity',
+             position="stack",
+             width = 10)  +
+    ggla_line(data=. %>% filter(pay_type=="real" & measure_name=="p_change_yoy"),
+              aes(x = date_day, y = measure_value,
+                  colour=measure_desc,
+                 fill=measure_desc),
+              size=1 * mm_to_pt)  +
+    geom_point(data=. %>% filter(pay_type=="real" & measure_name=="p_change_yoy"),
+              aes(x = date_day, y = measure_value,
+                  colour=measure_desc,
+                 fill=measure_desc,
+                 text = paste0(format(date_day,'%B %Y'), "\n",
+                           measure_desc,": ", perc_form(100*measure_value,d=1),"%")))+
+    geom_vline(aes(xintercept = as.numeric(ymd("2020-03-01"))),
+               linetype = "dotted",
+               size = 1 * mm_to_pt,
+               colour = rgb(166,166,166,maxColorValue = 255)) + # mark lockdowns start
+    scale_fill_manual(values=pal_named)+
+    scale_colour_manual(values=pal_named)+
+    coord_cartesian(clip = 'off') +
+    geom_hline(aes(yintercept=0), colour="gray45") +
+    scale_y_continuous(expand = c(0, 0), labels = percent_format(accuracy = 1),
+                       limits=c(-.12,.15)) +
+    scale_x_date( date_breaks = "1 year",
+                  date_labels = "%b %Y",
+                  expand = expansion( mult = c(0.05,0.05))) +
+    theme(plot.margin = unit(c(1,1,1,1), "cm"))+
+    labs(title =  "Decomposition of real median pay in London, % annual change",
+         subtitle = paste0("Effect from nominal pay change and CPIH inflation, to ",cpih_last_month_form),
+         caption = "\nSource: HM Revenue and Customs – Pay As You Earn Real Time Information, ONS.\n\nNote: March 2020 indicated by dotted line.\nInflation measure does not account for region-specific price changes. Sign of inflation rates has been \nreversed (higher inflation rates are associated with lower real pay growth).")+
+    theme(plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)))
+  
+  save_GLA_plot(plot_name = "real_nom_yoy_chart")
+  
+  # Plotly chart
+  LMU_plotly_settings(ch_name = real_nom_yoy_chart,
+                      title_text = 'paste0("Decomposition of real median pay in London, % annual change")',
+                      subtitle_text = 'paste0("Effect from nominal pay change and CPIH inflation, to ",cpih_last_month_form)',
+                      hover_mode = "closest")
+  
+  figure_cap <- paste0("Source: HM Revenue and Customs – Pay As You Earn Real Time Information, ONS.","<br>","<br>", "Note: March 2020 indicated by dotted line. Inflation measure does not account for region-specific price changes. Sign of inflation rates has been reversed (higher inflation rates are associated with lower real pay growth).")
+```
+<br/>
+
+<a href="#top">Back to top</a>
+
+## Single-month changes
+
+``` {r single month change, echo=FALSE, out.width='100%',fig.cap = figure_cap}
+pay_mom_cpih_data <- cpih_pay_stats %>%
+  select(date_day,cpih_mom,p_change_mom,geography_name,pay_type) %>%
+  mutate(cpih_mom=-cpih_mom) %>% #to model impact from inflation
+  pivot_longer(cols=contains("mom"),names_to = "measure_name",values_to="measure_value") %>%
+  mutate(measure_desc=case_when(measure_name=="p_change_mom" & pay_type=="nominal" ~ "Nominal pay",
+                                measure_name=="p_change_mom" & pay_type=="real" ~ "Real pay",
+                                measure_name=="cpih_mom" ~ "CPIH"),
+         measure_rank=case_when(measure_name=="p_change_mom"  ~ 1,
+                                measure_name=="cpih_mom" ~ 2))
+
+  measure_order <- c("Nominal pay","Real pay","CPIH") #Ensuring right order of stacked bars
+  named_groups <- c("Nominal pay","Real pay","CPIH")
+  pal <- gla_pal(palette_type = "highlight",n=c(2,1)) 
+  pal_named <- setNames(object=pal,nm=named_groups)
+  
+  real_nom_mom_chart <- pay_mom_cpih_data %>%
+    filter(date_day>="2020-01-01" & date_day<=cpih_last_month & geography_name=="London") %>% 
+    arrange(date_day,pay_type,measure_rank) %>% 
+    ggplot(aes())  +
+    geom_bar(data=. %>% filter(pay_type=="nominal"),
+             aes(x = date_day, y = measure_value ,
+                 colour=factor(measure_desc,levels = measure_order),
+                 fill=factor(measure_desc,levels = measure_order),
+                 text = paste0(format(date_day,'%B %Y'), "\n",
+                           measure_desc,", effect on real pay: ", perc_form(100*measure_value,d=1),"%")),
+             stat='identity',
+             position="stack",
+             width = 10)  +
+    ggla_line(data=. %>% filter(pay_type=="real" & measure_name=="p_change_mom"),
+              aes(x = date_day, y = measure_value,
+                  colour=measure_desc,
+                 fill=measure_desc),
+              size=1 * mm_to_pt)  +
+    geom_point(data=. %>% filter(pay_type=="real" & measure_name=="p_change_mom"),
+              aes(x = date_day, y = measure_value,
+                  colour=measure_desc,
+                 fill=measure_desc,
+                 text = paste0(format(date_day,'%B %Y'), "\n",
+                           measure_desc,": ", perc_form(100*measure_value,d=1),"%")))+
+    geom_vline(aes(xintercept = as.numeric(ymd("2020-03-01"))),
+               linetype = "dotted",
+               size = 1 * mm_to_pt,
+               colour = rgb(166,166,166,maxColorValue = 255)) + # mark lockdowns start
+    scale_fill_manual(values=pal_named)+
+    scale_colour_manual(values=pal_named)+
+    coord_cartesian(clip = 'off') +
+    geom_hline(aes(yintercept=0), colour="gray45") +
+    scale_y_continuous(expand = c(0, 0), labels = percent_format(accuracy = 1),
+                       limits=c(-.03,.03)) +
+    scale_x_date( date_breaks = "1 year",
+                  date_labels = "%b %Y",
+                  expand = expansion( mult = c(0.05,0.05))) +
+    theme(plot.margin = unit(c(1,1,1,1), "cm"))+
+    labs(title =  "Decomposition of real median pay in London, % monthly change",
+         subtitle = paste0("Effect from nominal pay change and CPIH inflation, to ",cpih_last_month_form),
+         caption = "\nSource: HM Revenue and Customs – Pay As You Earn Real Time Information, ONS.\n\nNote: March 2020 indicated by dotted line.\nInflation measure does not account for region-specific price changes. Sign of inflation rates has been \nreversed (higher inflation rates are associated with lower real pay growth).")+
+    theme(plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)))
+  
+  save_GLA_plot(plot_name = "real_nom_mom_chart")
+  
+  # Plotly chart
+  LMU_plotly_settings(ch_name = real_nom_mom_chart,
+                      title_text = 'paste0("Decomposition of real median pay in London, % monthly change")',
+                      subtitle_text = 'paste0("Effect from nominal pay change and CPIH inflation, to ",cpih_last_month_form)',
+                      hover_mode = "closest")
+  
+  figure_cap <- paste0("Source: HM Revenue and Customs – Pay As You Earn Real Time Information, ONS.","<br>","<br>", "Note: March 2020 indicated by dotted line. Inflation measure does not account for region-specific price changes. Sign of inflation rates has been reversed (higher inflation rates are associated with lower real pay growth).")
+
+```
+<br/>
+
+<a href="#top">Back to top</a>
+
+
+## Three-month changes
+
+
+``` {r three month change, echo=FALSE, out.width='100%',fig.cap = figure_cap}
+
+pay_3o3_cpih_data <- cpih_pay_stats %>%
+  select(date_day,date_3m,cpih_3o3,p_change_3o3,geography_name,pay_type) %>%
+  mutate(cpih_3o3=-cpih_3o3) %>% #to model impact from inflation
+  pivot_longer(cols=contains("3o3"),names_to = "measure_name",values_to="measure_value") %>%
+  mutate(measure_desc=case_when(measure_name=="p_change_3o3" & pay_type=="nominal" ~ "Nominal pay",
+                                measure_name=="p_change_3o3" & pay_type=="real" ~ "Real pay",
+                                measure_name=="cpih_3o3" ~ "CPIH"),
+         measure_rank=case_when(measure_name=="p_change_3o3"  ~ 1,
+                                measure_name=="cpih_3o3" ~ 2))
+
+  measure_order <- c("Nominal pay","Real pay","CPIH") #Ensuring right order of stacked bars
+  named_groups <- c("Nominal pay","Real pay","CPIH")
+  pal <- gla_pal(palette_type = "highlight",n=c(2,1)) 
+  pal_named <- setNames(object=pal,nm=named_groups)
+  
+  real_nom_3o3_chart <- pay_3o3_cpih_data %>%
+    filter(date_day>="2020-01-01" & date_day<=cpih_last_month & geography_name=="London") %>% 
+    arrange(date_day,pay_type,measure_rank) %>% 
+    ggplot(aes())  +
+    geom_bar(data=. %>% filter(pay_type=="nominal"),
+             aes(x = date_day, y = measure_value ,
+                 colour=factor(measure_desc,levels = measure_order),
+                 fill=factor(measure_desc,levels = measure_order),
+                 text = paste0(date_3m, "\n",
+                           measure_desc,", effect on real pay: ", perc_form(100*measure_value,d=1),"%")),
+             stat='identity',
+             position="stack",
+             width = 10)  +
+    ggla_line(data=. %>% filter(pay_type=="real" & measure_name=="p_change_3o3"),
+              aes(x = date_day, y = measure_value,
+                  colour=measure_desc,
+                 fill=measure_desc),
+              size=1 * mm_to_pt)  +
+    geom_point(data=. %>% filter(pay_type=="real" & measure_name=="p_change_3o3"),
+              aes(x = date_day, y = measure_value,
+                  colour=measure_desc,
+                 fill=measure_desc,
+                 text = paste0(date_3m, "\n",
+                           measure_desc,": ", perc_form(100*measure_value,d=1),"%")))+
+    geom_vline(aes(xintercept = as.numeric(ymd("2020-03-01"))),
+               linetype = "dotted",
+               size = 1 * mm_to_pt,
+               colour = rgb(166,166,166,maxColorValue = 255)) + # mark lockdowns start
+    scale_fill_manual(values=pal_named)+
+    scale_colour_manual(values=pal_named)+
+    coord_cartesian(clip = 'off') +
+    geom_hline(aes(yintercept=0), colour="gray45") +
+    scale_y_continuous(expand = c(0, 0), labels = percent_format(accuracy = 1),
+                       limits=c(-.04,.06)) +
+    scale_x_date( date_breaks = "1 year",
+                  date_labels = "%b %Y",
+                  expand = expansion( mult = c(0.05,0.05))) +
+    theme(plot.margin = unit(c(1,1,1,1), "cm"))+
+    labs(title =  "Decomposition of real median pay in London, 3-month period % change",
+         subtitle = paste0("Effect from nominal pay change and CPIH inflation, to ",cpih_last_month_form),
+         caption = "\nSource: HM Revenue and Customs – Pay As You Earn Real Time Information, ONS.\n\nNote: March 2020 indicated by dotted line.\nInflation measure does not account for region-specific price changes. Sign of inflation rates has been \nreversed (higher inflation rates are associated with lower real pay growth).")+
+    theme(plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)))
+  
+  save_GLA_plot(plot_name = "real_nom_3o3_chart")
+  
+  # Plotly chart
+  LMU_plotly_settings(ch_name = real_nom_3o3_chart,
+                      title_text = 'paste0("Decomposition of real median pay in London, 3-month period % change")',
+                      subtitle_text = 'paste0("Effect from nominal pay change and CPIH inflation, to ",cpih_last_month_form)',
+                      hover_mode = "closest")
+  
+  figure_cap <- paste0("Source: HM Revenue and Customs – Pay As You Earn Real Time Information, ONS.","<br>","<br>", "Note: March 2020 indicated by dotted line. Inflation measure does not account for region-specific price changes. Sign of inflation rates has been reversed (higher inflation rates are associated with lower real pay growth).")
+
+```
+<br/>
+
+<a href="#top">Back to top</a>
+
+
+## Change by industry
+
+``` {r industry change, echo=FALSE, out.width='100%',fig.cap = figure_cap}
+  
+  # Set size threshold
+  sector_thresh <- 25000
+  
+  pal <- setNames(gla_pal(gla_theme = "default", palette_type = "highlight", n = c(1, 1)),
+                  nm=c("London","UK"))
+  
+  # Select industries large in London, e.g. 20k+
+  lon_large_inds_paye <- paye_nuts1ind_stats %>%
+    filter( geography_name=="London" & date_day == max(date_day) & measure_name == "emps" & measure_value>=sector_thresh) %>% 
+    pull(industry_name_simple)
+  
+  paye_ind_pay_bar <- paye_nuts1ind_stats %>%
+    filter(date_day == max(date_day) & measure_name == "median_pay" & industry_name_simple %in% lon_large_inds_paye & geography_name %in% c("London", "UK")) %>% 
+    group_by(geography_name) %>% #To ensure chart ranking is correct, make rank based on London and assign within sector
+    mutate(chart_ranking = case_when( 
+      industry_name_simple == "Total" & geography_name=="London" ~ 1,
+      !(industry_name_simple == "Total") & geography_name=="London" ~ dense_rank(desc(p_change_feb20))+1,
+      TRUE ~ 99))  %>% 
+    group_by(industry_name_simple) %>% 
+    mutate(chart_ranking=min(chart_ranking)) %>% 
+    ungroup() %>% 
+    arrange(chart_ranking)   %>% 
+    ggplot(mapping = aes(x =  factor(reorder(industry_name_simple, -chart_ranking)), 
+                         y = p_change_feb20, 
+                         colour = factor(reorder(geography_name,desc(geography_name))) ,#since horizontal bar reverses orders, we need to reverse too
+                         fill=factor(reorder(geography_name,desc(geography_name))),
+                         text = paste0(industry_name_simple, "\n",
+                                      geography_name, "\n",
+                                      "Change: ", perc_form(100*p_change_feb20),"%", "\n"))) +
+    geom_bar(stat = "identity", position = position_dodge(), width=0.5) +
+    geom_hline(aes(yintercept=0), colour="gray45") +
+    geom_vline(xintercept=c(length(lon_large_inds_paye) - 0.5),
+               colour="gray45",
+               linetype = "dotted",
+               size = 1 * mm_to_pt)+ #adds line below total
+    scale_color_manual(values = rev(pal), aesthetics = "colour")+
+    scale_fill_manual(values = rev(pal), aesthetics = "fill")+
+    theme_set(theme_gla(gla_theme = "default", y_label_length=100)) + #GLA theme and removes lines below y-axis labels
+    scale_y_continuous(limits = c(-0.05, 0.4), 
+                       labels = percent_format(accuracy=1)) +
+    theme(plot.margin = unit(c(1,1,1,1), "cm"))+
+    scale_x_discrete(expand = c(0,0)) +
+    theme(panel.grid.major.y = element_blank(), #removed y grid
+          panel.grid.minor.y = element_blank(), # removes small y grid
+          panel.grid.major.x = element_line( size=.5 ), # removes x grid
+          axis.text.y = ggplot2::element_text( # ensures  y axis labels stay outside chart
+            hjust = 0, vjust = 0.5,
+            margin = ggplot2::margin(t = 0, r = 0, b = 0, l = 0,
+                                     unit = "pt")),
+          axis.ticks.length.y = ggplot2::unit(x = 0, units = "pt")) + #removes ticks from y axis
+    coord_flip()+
+    guides(colour=guide_legend(reverse=TRUE),
+           fill=guide_legend(reverse=TRUE)) +
+    labs(title = paste0("Nominal median pay by industry, % change"),
+         subtitle = paste0("Payrolled employee pay, between February 2020 and ", paye_ind_last_month),
+         caption = "\nSource: HM Revenue and Customs – Pay As You Earn Real Time Information, ONS.\n\nNote: ")+
+    theme(plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)))
+  
+  save_GLA_plot(plot_name = "paye_ind_pay_bar")
+  
+  LMU_plotly_settings(ch_name = paye_ind_pay_bar,
+                      title_text = 'paste0("Nominal median pay by industry, % change")',
+                      subtitle_text = 'paste0("Payrolled employee pay, between February 2020 and ", paye_ind_last_month)',
+                      hover_mode = "closest") %>% 
+    layout(xaxis = list(showgrid=TRUE),
+           yaxis = list(showgrid=FALSE)) %>% 
+    reverse_legend_labels()
+  
+  figure_cap <- paste0("Source: HM Revenue and Customs – Pay As You Earn Real Time Information, ONS.","<br>","<br>", "Note: .")
+
+```
+<br/>
+
+<a href="#top">Back to top</a>
+
+
+
+## Change by local authority
+
+``` {r la change, echo=FALSE, out.width='100%',fig.cap = figure_cap}
+
+  ## The below produces both a markdown interactive Leaflet map and a static GGPLOT map ##
+  
+  # Create interval ranges for bins
+  paye_la_stats_geo_bins <- paye_la_stats_geo %>% 
+    arrange(p_change_feb20) %>% 
+    mutate(value_floor = rounder(p_change_feb20,-2),
+           value_ceil = rounder(p_change_feb20,2),
+           value_interval = paste0(value_floor,"%-",value_ceil,"%")) 
+
+# Helper data for bins
+  bin_data <- paye_la_stats_geo_bins %>% 
+    pivot_longer(cols=c("value_ceil","value_floor"),values_to="bin_val") %>% 
+    distinct(bin_val) %>% 
+    arrange(bin_val) %>% 
+    mutate(bin_int = paste0(lag(bin_val,n=1),"%-",bin_val,"%"))
+  
+  # Define bin cuts for interactive map
+  bin_cuts <- bin_data %>% 
+    pull(bin_val)
+  
+  # Define categorical bin  intervals for ggplot
+  bin_ints <- bin_data %>%
+    filter(!grepl("NA",bin_int)) %>% # remove any with NA in interval
+    arrange(bin_int) %>% 
+    pull(bin_int)
+  
+  bin_ints_n <- length(bin_ints)
+  
+  # All necessary variables for map
+  map_bins <- bin_cuts
+  map_palette <- setNames(rev(gla_pal(palette_type = "quantitative", main_colours = c("blue"), n = bin_ints_n)),nm=bin_ints)
+  map_title <- paste0("Change since","<br>" ,"February 2020 (%)")
+  figure_cap <- paste0("Source: HM Revenue and Customs - Pay As You Earn Real Time Information. Contains Ordnance Survey data Crown copyright and database rights [2015].","<br>","<br>", "Note: Estimates are based on where employees live.")
+  
+  # Run GGPLOT map for static picture
+  paye_la_pay_map <- paye_la_stats_geo_bins  %>%
+    ggplot(aes(geometry = geometry,
+               fill = factor(value_interval,
+                             levels=bin_ints))) +
+    ggla_sf() +
+    scale_fill_manual(values = map_palette) +
+    labs(title = paste0("Median pay, % change since Feb 2020"), # Convert from HTML to text
+         subtitle = paste0("Payrolled employees, latest data to ",paye_la_last_month),
+         caption = gsub("<br>","\n",figure_cap))
+  
+  save_GLA_plot(plot_name = "paye_la_pay_map")
+  
+  #Run interactive Map
+  leaflet_map_output(dataset=paye_la_stats_geo,
+                     dt_var="p_change_feb20",
+                     palette=map_palette,
+                     bins=map_bins,
+                     title=map_title)
+
+```
+<br/>
+
+<a href="#top">Back to top</a>
+
+
+## Change by age group
+
+``` {r age group change, echo=FALSE, out.width='100%',fig.cap = figure_cap}
+
+  pal <- gla_pal(gla_theme = "default", palette_type = "highlight", n = c(1, 1))
+
+  paye_age_pay_bars <- paye_nuts1age_stats %>%
+    group_by(geography_name, measure_name) %>% 
+    filter( (date_day == max(date_day)) & !(age_group %in% c("Aged: 0-17")) & geography_name %in% c("London", "UK") & measure_name=="median_pay" ) %>%  
+    mutate(chart_ranking = rank((age_group))) %>% 
+    ungroup() %>% 
+    ggplot(mapping = aes(x = reorder(age_group,chart_ranking), 
+                         y = p_change_feb20, 
+                         colour = geography_name , fill=geography_name,
+                         text = paste(age_group, "\n",
+                                      geography_name, "\n",
+                                      "Change: ", perc_form(100*p_change_feb20),"%", "\n",
+                                      sep = ""))) +
+    geom_bar(stat = "identity", position = position_dodge(), width = 0.4)+
+    geom_hline(aes(yintercept=0), colour="gray45") +
+    scale_colour_manual(values = pal) +
+    scale_fill_manual(values = pal) +
+    theme_set(theme_gla(gla_theme = "default")) +
+    scale_y_continuous(limits = c(-0.02, 0.25), labels = percent_format(accuracy=1)) +
+    theme(axis.text.x = element_text( hjust=1, vjust=0.5)) +
+    theme(plot.margin = unit(c(1,1,1,1), "cm"))+
+    labs(title = "Nominal median pay by age group, % change",
+         subtitle = paste0("Payrolled employee pay, between February 2020 and ", paye_age_last_month),
+         caption = "\nSource: HM Revenue and Customs – Pay As You Earn Real Time Information.\n\nNote: Estimates are based on where employees live.") +
+    theme(plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)))
+  
+  save_GLA_plot(plot_name = "paye_age_pay_bars")
+  
+  LMU_plotly_settings(ch_name = paye_age_pay_bars,
+                      title_text = 'paste0("Nominal median pay by age group, % change")',
+                      subtitle_text = 'paste0("Payrolled employee pay, between February 2020 and ", paye_age_last_month)',
+                      hover_mode = "closest") 
+  
+  figure_cap <- paste0("Source: HM Revenue and Customs – Pay As You Earn Real Time Information.<br><br>Note: Estimates are based on where employees live.")
+
+
+```
+<br/>
+
+<a href="#top">Back to top</a>
+
+
+## Comparison by NUTS2
+
+``` {r nuts2 comp, echo=FALSE, out.width='100%'}
+
+  # Palette: five subregions, one London, one UK
+  pal <- c(rep(gla_pal(gla_theme = "default", palette_type = "categorical", n = 1),5),
+           gla_pal(gla_theme = "default", palette_type = "highlight", n = c(1, 1)))
+  pal_text <- c(rep("white",6),"black")
+
+  paye_nuts2_pay_feb20 <- paye_nuts2_stats %>%
+    filter(date_day == max(date_day) & measure_name=="median_pay") %>%
+    mutate(chart_ranking = case_when( geography_name == "UK" ~ 1,
+                                      geography_name == "London" ~ 2,
+                                      TRUE ~ dense_rank(desc(p_change_feb20))+2)) %>% 
+    ggplot(mapping = aes(x =  reorder(geography_name, -chart_ranking), y = p_change_feb20,
+                         colour = geography_name,
+                         group = geography_name,
+                         fill=geography_name,
+                         text = paste0(
+                           geography_name, "\n",
+                           "Change: ", perc_form(100*p_change_feb20),"%", "\n"))) +
+    geom_bar(aes(width=0.5), 
+             stat="identity")+
+    geom_text(aes(label=paste(format(round(100*p_change_feb20,1), digits = 2), "%"),
+                  y = p_change_feb20-0.012*((p_change_feb20)/abs(p_change_feb20))),
+              color=pal_text) + 
+    scale_color_manual(values = pal, aesthetics = "colour") +
+    scale_fill_manual(values = pal, aesthetics =  "fill") +
+    coord_cartesian(clip = 'off') +
+    geom_hline(aes(yintercept=0), colour="gray45") +
+    scale_y_continuous(labels = percent_format(accuracy=1),
+                       limits = c(0,0.15)) +
+    scale_x_discrete(labels = function(x) str_wrap(x, width = 10)) +
+    theme(plot.margin = unit(c(1,1,1,1), "cm"),axis.text=element_text(size=12))+
+    labs(title =  "Nominal median pay by NUTS2 region, % change",
+         subtitle = paste0("Payrolled employees, between February 2020 and ", paye_overall_last_month),
+         caption = "\nSource: HM Revenue and Customs – Pay As You Earn Real Time Information.\n\nNote: Estimates are based on where employees live.") + 
+    theme(legend.position = "none",
+          plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)))
+  
+  
+  save_GLA_plot(plot_name = "paye_nuts2_pay_feb20")
+  
+  LMU_plotly_settings(ch_name = paye_nuts2_pay_feb20,
+                      title_text = 'paste0("Nominal median pay by NUTS2 region, % change")',
+                      subtitle_text = 'paste0("Payrolled employee pay, between February 2020 and ",
+                      paye_overall_last_month)',
+                      hover_mode = "closest") %>% 
+    hide_legend()
+  
+  figure_cap <- paste0("Source: HM Revenue and Customs – Pay As You Earn Real Time Information.<br><br>Note: Estimates are based on where employees live.")
+
+
+```
+<br/>
+
+<a href="#top">Back to top</a>
+
+
+## Level of real median pay long
+
+``` {r long real median pay, echo=FALSE, out.width='100%',fig.cap = figure_cap}
+
+  lt_pay_data <- cpih_pay_stats %>%
+    filter(pay_type=="real" & date_day>=as.Date("2019-01-01")) 
+  
+  named_groups <- c("London","United Kingdom")
+  pal <- gla_pal(palette_type = "highlight",n=c(1,1)) 
+  pal_named <- setNames(object=pal,nm=named_groups)
+  
+  max_y <- max(lt_pay_data %>% pull(pay_index_jan19))
+  min_y <- min(lt_pay_data %>% pull(pay_index_jan19))
+  
+  lt_real_pay_line <- lt_pay_data%>% 
+    ggplot(mapping = aes(x = date_day, y = pay_index_jan19, 
+                         colour = geography_name, 
+                         group = geography_name,
+                         text = paste0(
+                           geography_name, "\n",
+                           format(date_day,'%B %Y'), "\n",
+                           "Real pay index: ", value_form(pay_index_jan19,s=3,d=0), "\n"))) +
+    ggla_line(aes(size= geography_name)) +
+    scale_size_manual(values = c(2 * mm_to_pt, 1 * mm_to_pt)) +
+    scale_colour_manual(values = pal_named) +
+    ggla_highlight(filter_type = "end") +
+    ggla_highlight(mapping = aes(label = value_form(pay_index_jan19,s=3,d=0)),
+                   geom = GeomGLATextHighlight, filter_type = "end",  size = 4.5,
+                   position = position_nudge(y = c(0,0)),
+                   check_overlap = TRUE)+
+    geom_vline(aes(xintercept = as.numeric(ymd("2020-03-01"))),
+               linetype = "dotted",
+               size = 1 * mm_to_pt,
+               colour = rgb(166,166,166,maxColorValue = 255)) + # mark lockdowns start
+    coord_cartesian(clip = 'off') +
+    scale_y_continuous(expand = c(0, 0), 
+                       limits = c(max_y-3/2*(max_y-min_y),max_y),
+                       labels = comma_format(accuracy=1)) +
+    scale_x_date( date_breaks = "1 year",
+                  date_labels = "%b %Y",
+                  expand = expansion( mult = c(0.05,0.05))) +
+    theme(plot.margin = unit(c(1,1,1,1), "cm"))+
+    labs(title =  "Level of real median pay since 2019",
+         subtitle = paste0("Nominal pay adjusted for inflation, to ",cpih_last_month_form),
+         caption = "\nSource: HM Revenue and Customs – Pay As You Earn Real Time Information, ONS.\n\nNote: March 2020 indicated by dotted line.")+
+    theme(plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)))
+  
+  save_GLA_plot(plot_name = "lt_real_pay_line")
+  
+  # Plotly chart
+  LMU_plotly_settings(ch_name = lt_real_pay_line,
+                      title_text = 'paste0("Level of real median pay since 2019")',
+                      subtitle_text = 'paste0("Nominal pay adjusted for inflation, to ",cpih_last_month_form)',
+                      hover_mode = "x unified")
+  
+  figure_cap <- paste0("Source: HM Revenue and Customs – Pay As You Earn Real Time Information, ONS.","<br>","<br>", "Note: March 2020 indicated by dotted line. Inflation measure does not account for region-specific price changes. Sign of inflation rates has been reversed (higher inflation rates are associated with lower real pay growth).")
+
+```
+<br/>
+
+<a href="#top">Back to top</a>
+
+
+</font>
+
+::: {.tocify-extend-page data-unique="tocify-extend-page" style="height: 0;"}
+:::

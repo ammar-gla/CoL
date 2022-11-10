@@ -1,0 +1,1105 @@
+date_day,date_name,geography_name,sex_name,measure_value,measures_name
+2015-01-01,January 2015,London,Male,73031,Value
+2015-01-01,January 2015,London,Male,2.5,Proportion of resident population aged 16-64 estimates
+2015-01-01,January 2015,London,Female,51493,Value
+2015-01-01,January 2015,London,Female,1.7,Proportion of resident population aged 16-64 estimates
+2015-01-01,January 2015,London,Total,124524,Value
+2015-01-01,January 2015,London,Total,2.1,Proportion of resident population aged 16-64 estimates
+2015-01-01,January 2015,United Kingdom,Male,547876,Value
+2015-01-01,January 2015,United Kingdom,Male,2.7,Proportion of resident population aged 16-64 estimates
+2015-01-01,January 2015,United Kingdom,Female,307673,Value
+2015-01-01,January 2015,United Kingdom,Female,1.5,Proportion of resident population aged 16-64 estimates
+2015-01-01,January 2015,United Kingdom,Total,855549,Value
+2015-01-01,January 2015,United Kingdom,Total,2.1,Proportion of resident population aged 16-64 estimates
+2015-02-01,February 2015,London,Male,71120,Value
+2015-02-01,February 2015,London,Male,2.4,Proportion of resident population aged 16-64 estimates
+2015-02-01,February 2015,London,Female,50327,Value
+2015-02-01,February 2015,London,Female,1.7,Proportion of resident population aged 16-64 estimates
+2015-02-01,February 2015,London,Total,121447,Value
+2015-02-01,February 2015,London,Total,2.1,Proportion of resident population aged 16-64 estimates
+2015-02-01,February 2015,United Kingdom,Male,534308,Value
+2015-02-01,February 2015,United Kingdom,Male,2.6,Proportion of resident population aged 16-64 estimates
+2015-02-01,February 2015,United Kingdom,Female,300397,Value
+2015-02-01,February 2015,United Kingdom,Female,1.5,Proportion of resident population aged 16-64 estimates
+2015-02-01,February 2015,United Kingdom,Total,834705,Value
+2015-02-01,February 2015,United Kingdom,Total,2,Proportion of resident population aged 16-64 estimates
+2015-03-01,March 2015,London,Male,69448,Value
+2015-03-01,March 2015,London,Male,2.3,Proportion of resident population aged 16-64 estimates
+2015-03-01,March 2015,London,Female,49041,Value
+2015-03-01,March 2015,London,Female,1.7,Proportion of resident population aged 16-64 estimates
+2015-03-01,March 2015,London,Total,118489,Value
+2015-03-01,March 2015,London,Total,2,Proportion of resident population aged 16-64 estimates
+2015-03-01,March 2015,United Kingdom,Male,522494,Value
+2015-03-01,March 2015,United Kingdom,Male,2.5,Proportion of resident population aged 16-64 estimates
+2015-03-01,March 2015,United Kingdom,Female,292297,Value
+2015-03-01,March 2015,United Kingdom,Female,1.4,Proportion of resident population aged 16-64 estimates
+2015-03-01,March 2015,United Kingdom,Total,814791,Value
+2015-03-01,March 2015,United Kingdom,Total,2,Proportion of resident population aged 16-64 estimates
+2015-04-01,April 2015,London,Male,68375,Value
+2015-04-01,April 2015,London,Male,2.3,Proportion of resident population aged 16-64 estimates
+2015-04-01,April 2015,London,Female,47807,Value
+2015-04-01,April 2015,London,Female,1.6,Proportion of resident population aged 16-64 estimates
+2015-04-01,April 2015,London,Total,116182,Value
+2015-04-01,April 2015,London,Total,2,Proportion of resident population aged 16-64 estimates
+2015-04-01,April 2015,United Kingdom,Male,518369,Value
+2015-04-01,April 2015,United Kingdom,Male,2.5,Proportion of resident population aged 16-64 estimates
+2015-04-01,April 2015,United Kingdom,Female,286304,Value
+2015-04-01,April 2015,United Kingdom,Female,1.4,Proportion of resident population aged 16-64 estimates
+2015-04-01,April 2015,United Kingdom,Total,804673,Value
+2015-04-01,April 2015,United Kingdom,Total,2,Proportion of resident population aged 16-64 estimates
+2015-05-01,May 2015,London,Male,67533,Value
+2015-05-01,May 2015,London,Male,2.3,Proportion of resident population aged 16-64 estimates
+2015-05-01,May 2015,London,Female,47380,Value
+2015-05-01,May 2015,London,Female,1.6,Proportion of resident population aged 16-64 estimates
+2015-05-01,May 2015,London,Total,114913,Value
+2015-05-01,May 2015,London,Total,1.9,Proportion of resident population aged 16-64 estimates
+2015-05-01,May 2015,United Kingdom,Male,511697,Value
+2015-05-01,May 2015,United Kingdom,Male,2.5,Proportion of resident population aged 16-64 estimates
+2015-05-01,May 2015,United Kingdom,Female,284059,Value
+2015-05-01,May 2015,United Kingdom,Female,1.4,Proportion of resident population aged 16-64 estimates
+2015-05-01,May 2015,United Kingdom,Total,795756,Value
+2015-05-01,May 2015,United Kingdom,Total,1.9,Proportion of resident population aged 16-64 estimates
+2015-06-01,June 2015,London,Male,67416,Value
+2015-06-01,June 2015,London,Male,2.3,Proportion of resident population aged 16-64 estimates
+2015-06-01,June 2015,London,Female,47158,Value
+2015-06-01,June 2015,London,Female,1.6,Proportion of resident population aged 16-64 estimates
+2015-06-01,June 2015,London,Total,114574,Value
+2015-06-01,June 2015,London,Total,1.9,Proportion of resident population aged 16-64 estimates
+2015-06-01,June 2015,United Kingdom,Male,511855,Value
+2015-06-01,June 2015,United Kingdom,Male,2.5,Proportion of resident population aged 16-64 estimates
+2015-06-01,June 2015,United Kingdom,Female,282828,Value
+2015-06-01,June 2015,United Kingdom,Female,1.4,Proportion of resident population aged 16-64 estimates
+2015-06-01,June 2015,United Kingdom,Total,794683,Value
+2015-06-01,June 2015,United Kingdom,Total,1.9,Proportion of resident population aged 16-64 estimates
+2015-07-01,July 2015,London,Male,66594,Value
+2015-07-01,July 2015,London,Male,2.3,Proportion of resident population aged 16-64 estimates
+2015-07-01,July 2015,London,Female,46563,Value
+2015-07-01,July 2015,London,Female,1.6,Proportion of resident population aged 16-64 estimates
+2015-07-01,July 2015,London,Total,113157,Value
+2015-07-01,July 2015,London,Total,1.9,Proportion of resident population aged 16-64 estimates
+2015-07-01,July 2015,United Kingdom,Male,510189,Value
+2015-07-01,July 2015,United Kingdom,Male,2.5,Proportion of resident population aged 16-64 estimates
+2015-07-01,July 2015,United Kingdom,Female,280740,Value
+2015-07-01,July 2015,United Kingdom,Female,1.4,Proportion of resident population aged 16-64 estimates
+2015-07-01,July 2015,United Kingdom,Total,790929,Value
+2015-07-01,July 2015,United Kingdom,Total,1.9,Proportion of resident population aged 16-64 estimates
+2015-08-01,August 2015,London,Male,65960,Value
+2015-08-01,August 2015,London,Male,2.2,Proportion of resident population aged 16-64 estimates
+2015-08-01,August 2015,London,Female,46501,Value
+2015-08-01,August 2015,London,Female,1.6,Proportion of resident population aged 16-64 estimates
+2015-08-01,August 2015,London,Total,112461,Value
+2015-08-01,August 2015,London,Total,1.9,Proportion of resident population aged 16-64 estimates
+2015-08-01,August 2015,United Kingdom,Male,506868,Value
+2015-08-01,August 2015,United Kingdom,Male,2.5,Proportion of resident population aged 16-64 estimates
+2015-08-01,August 2015,United Kingdom,Female,278362,Value
+2015-08-01,August 2015,United Kingdom,Female,1.3,Proportion of resident population aged 16-64 estimates
+2015-08-01,August 2015,United Kingdom,Total,785230,Value
+2015-08-01,August 2015,United Kingdom,Total,1.9,Proportion of resident population aged 16-64 estimates
+2015-09-01,September 2015,London,Male,65525,Value
+2015-09-01,September 2015,London,Male,2.2,Proportion of resident population aged 16-64 estimates
+2015-09-01,September 2015,London,Female,46311,Value
+2015-09-01,September 2015,London,Female,1.6,Proportion of resident population aged 16-64 estimates
+2015-09-01,September 2015,London,Total,111836,Value
+2015-09-01,September 2015,London,Total,1.9,Proportion of resident population aged 16-64 estimates
+2015-09-01,September 2015,United Kingdom,Male,503615,Value
+2015-09-01,September 2015,United Kingdom,Male,2.5,Proportion of resident population aged 16-64 estimates
+2015-09-01,September 2015,United Kingdom,Female,276994,Value
+2015-09-01,September 2015,United Kingdom,Female,1.3,Proportion of resident population aged 16-64 estimates
+2015-09-01,September 2015,United Kingdom,Total,780609,Value
+2015-09-01,September 2015,United Kingdom,Total,1.9,Proportion of resident population aged 16-64 estimates
+2015-10-01,October 2015,London,Male,64662,Value
+2015-10-01,October 2015,London,Male,2.2,Proportion of resident population aged 16-64 estimates
+2015-10-01,October 2015,London,Female,46300,Value
+2015-10-01,October 2015,London,Female,1.6,Proportion of resident population aged 16-64 estimates
+2015-10-01,October 2015,London,Total,110962,Value
+2015-10-01,October 2015,London,Total,1.9,Proportion of resident population aged 16-64 estimates
+2015-10-01,October 2015,United Kingdom,Male,500715,Value
+2015-10-01,October 2015,United Kingdom,Male,2.4,Proportion of resident population aged 16-64 estimates
+2015-10-01,October 2015,United Kingdom,Female,276215,Value
+2015-10-01,October 2015,United Kingdom,Female,1.3,Proportion of resident population aged 16-64 estimates
+2015-10-01,October 2015,United Kingdom,Total,776930,Value
+2015-10-01,October 2015,United Kingdom,Total,1.9,Proportion of resident population aged 16-64 estimates
+2015-11-01,November 2015,London,Male,64338,Value
+2015-11-01,November 2015,London,Male,2.2,Proportion of resident population aged 16-64 estimates
+2015-11-01,November 2015,London,Female,45844,Value
+2015-11-01,November 2015,London,Female,1.6,Proportion of resident population aged 16-64 estimates
+2015-11-01,November 2015,London,Total,110182,Value
+2015-11-01,November 2015,London,Total,1.9,Proportion of resident population aged 16-64 estimates
+2015-11-01,November 2015,United Kingdom,Male,496760,Value
+2015-11-01,November 2015,United Kingdom,Male,2.4,Proportion of resident population aged 16-64 estimates
+2015-11-01,November 2015,United Kingdom,Female,274752,Value
+2015-11-01,November 2015,United Kingdom,Female,1.3,Proportion of resident population aged 16-64 estimates
+2015-11-01,November 2015,United Kingdom,Total,771512,Value
+2015-11-01,November 2015,United Kingdom,Total,1.9,Proportion of resident population aged 16-64 estimates
+2015-12-01,December 2015,London,Male,63928,Value
+2015-12-01,December 2015,London,Male,2.2,Proportion of resident population aged 16-64 estimates
+2015-12-01,December 2015,London,Female,46305,Value
+2015-12-01,December 2015,London,Female,1.6,Proportion of resident population aged 16-64 estimates
+2015-12-01,December 2015,London,Total,110233,Value
+2015-12-01,December 2015,London,Total,1.9,Proportion of resident population aged 16-64 estimates
+2015-12-01,December 2015,United Kingdom,Male,494097,Value
+2015-12-01,December 2015,United Kingdom,Male,2.4,Proportion of resident population aged 16-64 estimates
+2015-12-01,December 2015,United Kingdom,Female,275531,Value
+2015-12-01,December 2015,United Kingdom,Female,1.3,Proportion of resident population aged 16-64 estimates
+2015-12-01,December 2015,United Kingdom,Total,769628,Value
+2015-12-01,December 2015,United Kingdom,Total,1.9,Proportion of resident population aged 16-64 estimates
+2016-01-01,January 2016,London,Male,63853,Value
+2016-01-01,January 2016,London,Male,2.1,Proportion of resident population aged 16-64 estimates
+2016-01-01,January 2016,London,Female,46344,Value
+2016-01-01,January 2016,London,Female,1.6,Proportion of resident population aged 16-64 estimates
+2016-01-01,January 2016,London,Total,110197,Value
+2016-01-01,January 2016,London,Total,1.9,Proportion of resident population aged 16-64 estimates
+2016-01-01,January 2016,United Kingdom,Male,489523,Value
+2016-01-01,January 2016,United Kingdom,Male,2.4,Proportion of resident population aged 16-64 estimates
+2016-01-01,January 2016,United Kingdom,Female,275308,Value
+2016-01-01,January 2016,United Kingdom,Female,1.3,Proportion of resident population aged 16-64 estimates
+2016-01-01,January 2016,United Kingdom,Total,764831,Value
+2016-01-01,January 2016,United Kingdom,Total,1.8,Proportion of resident population aged 16-64 estimates
+2016-02-01,February 2016,London,Male,63188,Value
+2016-02-01,February 2016,London,Male,2.1,Proportion of resident population aged 16-64 estimates
+2016-02-01,February 2016,London,Female,46106,Value
+2016-02-01,February 2016,London,Female,1.6,Proportion of resident population aged 16-64 estimates
+2016-02-01,February 2016,London,Total,109294,Value
+2016-02-01,February 2016,London,Total,1.8,Proportion of resident population aged 16-64 estimates
+2016-02-01,February 2016,United Kingdom,Male,484983,Value
+2016-02-01,February 2016,United Kingdom,Male,2.3,Proportion of resident population aged 16-64 estimates
+2016-02-01,February 2016,United Kingdom,Female,273481,Value
+2016-02-01,February 2016,United Kingdom,Female,1.3,Proportion of resident population aged 16-64 estimates
+2016-02-01,February 2016,United Kingdom,Total,758464,Value
+2016-02-01,February 2016,United Kingdom,Total,1.8,Proportion of resident population aged 16-64 estimates
+2016-03-01,March 2016,London,Male,63281,Value
+2016-03-01,March 2016,London,Male,2.1,Proportion of resident population aged 16-64 estimates
+2016-03-01,March 2016,London,Female,46175,Value
+2016-03-01,March 2016,London,Female,1.6,Proportion of resident population aged 16-64 estimates
+2016-03-01,March 2016,London,Total,109456,Value
+2016-03-01,March 2016,London,Total,1.8,Proportion of resident population aged 16-64 estimates
+2016-03-01,March 2016,United Kingdom,Male,490895,Value
+2016-03-01,March 2016,United Kingdom,Male,2.4,Proportion of resident population aged 16-64 estimates
+2016-03-01,March 2016,United Kingdom,Female,275559,Value
+2016-03-01,March 2016,United Kingdom,Female,1.3,Proportion of resident population aged 16-64 estimates
+2016-03-01,March 2016,United Kingdom,Total,766454,Value
+2016-03-01,March 2016,United Kingdom,Total,1.8,Proportion of resident population aged 16-64 estimates
+2016-04-01,April 2016,London,Male,63123,Value
+2016-04-01,April 2016,London,Male,2.1,Proportion of resident population aged 16-64 estimates
+2016-04-01,April 2016,London,Female,46355,Value
+2016-04-01,April 2016,London,Female,1.6,Proportion of resident population aged 16-64 estimates
+2016-04-01,April 2016,London,Total,109478,Value
+2016-04-01,April 2016,London,Total,1.8,Proportion of resident population aged 16-64 estimates
+2016-04-01,April 2016,United Kingdom,Male,489723,Value
+2016-04-01,April 2016,United Kingdom,Male,2.4,Proportion of resident population aged 16-64 estimates
+2016-04-01,April 2016,United Kingdom,Female,275425,Value
+2016-04-01,April 2016,United Kingdom,Female,1.3,Proportion of resident population aged 16-64 estimates
+2016-04-01,April 2016,United Kingdom,Total,765148,Value
+2016-04-01,April 2016,United Kingdom,Total,1.8,Proportion of resident population aged 16-64 estimates
+2016-05-01,May 2016,London,Male,63157,Value
+2016-05-01,May 2016,London,Male,2.1,Proportion of resident population aged 16-64 estimates
+2016-05-01,May 2016,London,Female,45912,Value
+2016-05-01,May 2016,London,Female,1.6,Proportion of resident population aged 16-64 estimates
+2016-05-01,May 2016,London,Total,109069,Value
+2016-05-01,May 2016,London,Total,1.8,Proportion of resident population aged 16-64 estimates
+2016-05-01,May 2016,United Kingdom,Male,492072,Value
+2016-05-01,May 2016,United Kingdom,Male,2.4,Proportion of resident population aged 16-64 estimates
+2016-05-01,May 2016,United Kingdom,Female,275213,Value
+2016-05-01,May 2016,United Kingdom,Female,1.3,Proportion of resident population aged 16-64 estimates
+2016-05-01,May 2016,United Kingdom,Total,767285,Value
+2016-05-01,May 2016,United Kingdom,Total,1.9,Proportion of resident population aged 16-64 estimates
+2016-06-01,June 2016,London,Male,63664,Value
+2016-06-01,June 2016,London,Male,2.1,Proportion of resident population aged 16-64 estimates
+2016-06-01,June 2016,London,Female,46550,Value
+2016-06-01,June 2016,London,Female,1.6,Proportion of resident population aged 16-64 estimates
+2016-06-01,June 2016,London,Total,110214,Value
+2016-06-01,June 2016,London,Total,1.9,Proportion of resident population aged 16-64 estimates
+2016-06-01,June 2016,United Kingdom,Male,495144,Value
+2016-06-01,June 2016,United Kingdom,Male,2.4,Proportion of resident population aged 16-64 estimates
+2016-06-01,June 2016,United Kingdom,Female,277279,Value
+2016-06-01,June 2016,United Kingdom,Female,1.3,Proportion of resident population aged 16-64 estimates
+2016-06-01,June 2016,United Kingdom,Total,772423,Value
+2016-06-01,June 2016,United Kingdom,Total,1.9,Proportion of resident population aged 16-64 estimates
+2016-07-01,July 2016,London,Male,64177,Value
+2016-07-01,July 2016,London,Male,2.1,Proportion of resident population aged 16-64 estimates
+2016-07-01,July 2016,London,Female,46929,Value
+2016-07-01,July 2016,London,Female,1.6,Proportion of resident population aged 16-64 estimates
+2016-07-01,July 2016,London,Total,111106,Value
+2016-07-01,July 2016,London,Total,1.9,Proportion of resident population aged 16-64 estimates
+2016-07-01,July 2016,United Kingdom,Male,494416,Value
+2016-07-01,July 2016,United Kingdom,Male,2.4,Proportion of resident population aged 16-64 estimates
+2016-07-01,July 2016,United Kingdom,Female,277660,Value
+2016-07-01,July 2016,United Kingdom,Female,1.3,Proportion of resident population aged 16-64 estimates
+2016-07-01,July 2016,United Kingdom,Total,772076,Value
+2016-07-01,July 2016,United Kingdom,Total,1.9,Proportion of resident population aged 16-64 estimates
+2016-08-01,August 2016,London,Male,64575,Value
+2016-08-01,August 2016,London,Male,2.2,Proportion of resident population aged 16-64 estimates
+2016-08-01,August 2016,London,Female,46998,Value
+2016-08-01,August 2016,London,Female,1.6,Proportion of resident population aged 16-64 estimates
+2016-08-01,August 2016,London,Total,111573,Value
+2016-08-01,August 2016,London,Total,1.9,Proportion of resident population aged 16-64 estimates
+2016-08-01,August 2016,United Kingdom,Male,496836,Value
+2016-08-01,August 2016,United Kingdom,Male,2.4,Proportion of resident population aged 16-64 estimates
+2016-08-01,August 2016,United Kingdom,Female,279885,Value
+2016-08-01,August 2016,United Kingdom,Female,1.3,Proportion of resident population aged 16-64 estimates
+2016-08-01,August 2016,United Kingdom,Total,776721,Value
+2016-08-01,August 2016,United Kingdom,Total,1.9,Proportion of resident population aged 16-64 estimates
+2016-09-01,September 2016,London,Male,64832,Value
+2016-09-01,September 2016,London,Male,2.2,Proportion of resident population aged 16-64 estimates
+2016-09-01,September 2016,London,Female,47312,Value
+2016-09-01,September 2016,London,Female,1.6,Proportion of resident population aged 16-64 estimates
+2016-09-01,September 2016,London,Total,112144,Value
+2016-09-01,September 2016,London,Total,1.9,Proportion of resident population aged 16-64 estimates
+2016-09-01,September 2016,United Kingdom,Male,497668,Value
+2016-09-01,September 2016,United Kingdom,Male,2.4,Proportion of resident population aged 16-64 estimates
+2016-09-01,September 2016,United Kingdom,Female,281965,Value
+2016-09-01,September 2016,United Kingdom,Female,1.4,Proportion of resident population aged 16-64 estimates
+2016-09-01,September 2016,United Kingdom,Total,779633,Value
+2016-09-01,September 2016,United Kingdom,Total,1.9,Proportion of resident population aged 16-64 estimates
+2016-10-01,October 2016,London,Male,65601,Value
+2016-10-01,October 2016,London,Male,2.2,Proportion of resident population aged 16-64 estimates
+2016-10-01,October 2016,London,Female,47916,Value
+2016-10-01,October 2016,London,Female,1.6,Proportion of resident population aged 16-64 estimates
+2016-10-01,October 2016,London,Total,113517,Value
+2016-10-01,October 2016,London,Total,1.9,Proportion of resident population aged 16-64 estimates
+2016-10-01,October 2016,United Kingdom,Male,498627,Value
+2016-10-01,October 2016,United Kingdom,Male,2.4,Proportion of resident population aged 16-64 estimates
+2016-10-01,October 2016,United Kingdom,Female,284402,Value
+2016-10-01,October 2016,United Kingdom,Female,1.4,Proportion of resident population aged 16-64 estimates
+2016-10-01,October 2016,United Kingdom,Total,783029,Value
+2016-10-01,October 2016,United Kingdom,Total,1.9,Proportion of resident population aged 16-64 estimates
+2016-11-01,November 2016,London,Male,66584,Value
+2016-11-01,November 2016,London,Male,2.2,Proportion of resident population aged 16-64 estimates
+2016-11-01,November 2016,London,Female,48903,Value
+2016-11-01,November 2016,London,Female,1.7,Proportion of resident population aged 16-64 estimates
+2016-11-01,November 2016,London,Total,115487,Value
+2016-11-01,November 2016,London,Total,1.9,Proportion of resident population aged 16-64 estimates
+2016-11-01,November 2016,United Kingdom,Male,499755,Value
+2016-11-01,November 2016,United Kingdom,Male,2.4,Proportion of resident population aged 16-64 estimates
+2016-11-01,November 2016,United Kingdom,Female,287492,Value
+2016-11-01,November 2016,United Kingdom,Female,1.4,Proportion of resident population aged 16-64 estimates
+2016-11-01,November 2016,United Kingdom,Total,787247,Value
+2016-11-01,November 2016,United Kingdom,Total,1.9,Proportion of resident population aged 16-64 estimates
+2016-12-01,December 2016,London,Male,66302,Value
+2016-12-01,December 2016,London,Male,2.2,Proportion of resident population aged 16-64 estimates
+2016-12-01,December 2016,London,Female,48663,Value
+2016-12-01,December 2016,London,Female,1.6,Proportion of resident population aged 16-64 estimates
+2016-12-01,December 2016,London,Total,114965,Value
+2016-12-01,December 2016,London,Total,1.9,Proportion of resident population aged 16-64 estimates
+2016-12-01,December 2016,United Kingdom,Male,493531,Value
+2016-12-01,December 2016,United Kingdom,Male,2.4,Proportion of resident population aged 16-64 estimates
+2016-12-01,December 2016,United Kingdom,Female,286971,Value
+2016-12-01,December 2016,United Kingdom,Female,1.4,Proportion of resident population aged 16-64 estimates
+2016-12-01,December 2016,United Kingdom,Total,780502,Value
+2016-12-01,December 2016,United Kingdom,Total,1.9,Proportion of resident population aged 16-64 estimates
+2017-01-01,January 2017,London,Male,65883,Value
+2017-01-01,January 2017,London,Male,2.2,Proportion of resident population aged 16-64 estimates
+2017-01-01,January 2017,London,Female,48543,Value
+2017-01-01,January 2017,London,Female,1.6,Proportion of resident population aged 16-64 estimates
+2017-01-01,January 2017,London,Total,114426,Value
+2017-01-01,January 2017,London,Total,1.9,Proportion of resident population aged 16-64 estimates
+2017-01-01,January 2017,United Kingdom,Male,487560,Value
+2017-01-01,January 2017,United Kingdom,Male,2.4,Proportion of resident population aged 16-64 estimates
+2017-01-01,January 2017,United Kingdom,Female,284743,Value
+2017-01-01,January 2017,United Kingdom,Female,1.4,Proportion of resident population aged 16-64 estimates
+2017-01-01,January 2017,United Kingdom,Total,772303,Value
+2017-01-01,January 2017,United Kingdom,Total,1.9,Proportion of resident population aged 16-64 estimates
+2017-02-01,February 2017,London,Male,65419,Value
+2017-02-01,February 2017,London,Male,2.2,Proportion of resident population aged 16-64 estimates
+2017-02-01,February 2017,London,Female,48251,Value
+2017-02-01,February 2017,London,Female,1.6,Proportion of resident population aged 16-64 estimates
+2017-02-01,February 2017,London,Total,113670,Value
+2017-02-01,February 2017,London,Total,1.9,Proportion of resident population aged 16-64 estimates
+2017-02-01,February 2017,United Kingdom,Male,484105,Value
+2017-02-01,February 2017,United Kingdom,Male,2.3,Proportion of resident population aged 16-64 estimates
+2017-02-01,February 2017,United Kingdom,Female,284225,Value
+2017-02-01,February 2017,United Kingdom,Female,1.4,Proportion of resident population aged 16-64 estimates
+2017-02-01,February 2017,United Kingdom,Total,768330,Value
+2017-02-01,February 2017,United Kingdom,Total,1.8,Proportion of resident population aged 16-64 estimates
+2017-03-01,March 2017,London,Male,66804,Value
+2017-03-01,March 2017,London,Male,2.2,Proportion of resident population aged 16-64 estimates
+2017-03-01,March 2017,London,Female,49421,Value
+2017-03-01,March 2017,London,Female,1.7,Proportion of resident population aged 16-64 estimates
+2017-03-01,March 2017,London,Total,116225,Value
+2017-03-01,March 2017,London,Total,1.9,Proportion of resident population aged 16-64 estimates
+2017-03-01,March 2017,United Kingdom,Male,492959,Value
+2017-03-01,March 2017,United Kingdom,Male,2.4,Proportion of resident population aged 16-64 estimates
+2017-03-01,March 2017,United Kingdom,Female,289856,Value
+2017-03-01,March 2017,United Kingdom,Female,1.4,Proportion of resident population aged 16-64 estimates
+2017-03-01,March 2017,United Kingdom,Total,782815,Value
+2017-03-01,March 2017,United Kingdom,Total,1.9,Proportion of resident population aged 16-64 estimates
+2017-04-01,April 2017,London,Male,68067,Value
+2017-04-01,April 2017,London,Male,2.3,Proportion of resident population aged 16-64 estimates
+2017-04-01,April 2017,London,Female,50402,Value
+2017-04-01,April 2017,London,Female,1.7,Proportion of resident population aged 16-64 estimates
+2017-04-01,April 2017,London,Total,118469,Value
+2017-04-01,April 2017,London,Total,2,Proportion of resident population aged 16-64 estimates
+2017-04-01,April 2017,United Kingdom,Male,497104,Value
+2017-04-01,April 2017,United Kingdom,Male,2.4,Proportion of resident population aged 16-64 estimates
+2017-04-01,April 2017,United Kingdom,Female,294639,Value
+2017-04-01,April 2017,United Kingdom,Female,1.4,Proportion of resident population aged 16-64 estimates
+2017-04-01,April 2017,United Kingdom,Total,791743,Value
+2017-04-01,April 2017,United Kingdom,Total,1.9,Proportion of resident population aged 16-64 estimates
+2017-05-01,May 2017,London,Male,68697,Value
+2017-05-01,May 2017,London,Male,2.3,Proportion of resident population aged 16-64 estimates
+2017-05-01,May 2017,London,Female,51512,Value
+2017-05-01,May 2017,London,Female,1.7,Proportion of resident population aged 16-64 estimates
+2017-05-01,May 2017,London,Total,120209,Value
+2017-05-01,May 2017,London,Total,2,Proportion of resident population aged 16-64 estimates
+2017-05-01,May 2017,United Kingdom,Male,496609,Value
+2017-05-01,May 2017,United Kingdom,Male,2.4,Proportion of resident population aged 16-64 estimates
+2017-05-01,May 2017,United Kingdom,Female,298575,Value
+2017-05-01,May 2017,United Kingdom,Female,1.4,Proportion of resident population aged 16-64 estimates
+2017-05-01,May 2017,United Kingdom,Total,795184,Value
+2017-05-01,May 2017,United Kingdom,Total,1.9,Proportion of resident population aged 16-64 estimates
+2017-06-01,June 2017,London,Male,69018,Value
+2017-06-01,June 2017,London,Male,2.3,Proportion of resident population aged 16-64 estimates
+2017-06-01,June 2017,London,Female,51803,Value
+2017-06-01,June 2017,London,Female,1.7,Proportion of resident population aged 16-64 estimates
+2017-06-01,June 2017,London,Total,120821,Value
+2017-06-01,June 2017,London,Total,2,Proportion of resident population aged 16-64 estimates
+2017-06-01,June 2017,United Kingdom,Male,497560,Value
+2017-06-01,June 2017,United Kingdom,Male,2.4,Proportion of resident population aged 16-64 estimates
+2017-06-01,June 2017,United Kingdom,Female,299437,Value
+2017-06-01,June 2017,United Kingdom,Female,1.4,Proportion of resident population aged 16-64 estimates
+2017-06-01,June 2017,United Kingdom,Total,796997,Value
+2017-06-01,June 2017,United Kingdom,Total,1.9,Proportion of resident population aged 16-64 estimates
+2017-07-01,July 2017,London,Male,69087,Value
+2017-07-01,July 2017,London,Male,2.3,Proportion of resident population aged 16-64 estimates
+2017-07-01,July 2017,London,Female,51908,Value
+2017-07-01,July 2017,London,Female,1.8,Proportion of resident population aged 16-64 estimates
+2017-07-01,July 2017,London,Total,120995,Value
+2017-07-01,July 2017,London,Total,2,Proportion of resident population aged 16-64 estimates
+2017-07-01,July 2017,United Kingdom,Male,496821,Value
+2017-07-01,July 2017,United Kingdom,Male,2.4,Proportion of resident population aged 16-64 estimates
+2017-07-01,July 2017,United Kingdom,Female,300504,Value
+2017-07-01,July 2017,United Kingdom,Female,1.4,Proportion of resident population aged 16-64 estimates
+2017-07-01,July 2017,United Kingdom,Total,797325,Value
+2017-07-01,July 2017,United Kingdom,Total,1.9,Proportion of resident population aged 16-64 estimates
+2017-08-01,August 2017,London,Male,69085,Value
+2017-08-01,August 2017,London,Male,2.3,Proportion of resident population aged 16-64 estimates
+2017-08-01,August 2017,London,Female,51863,Value
+2017-08-01,August 2017,London,Female,1.7,Proportion of resident population aged 16-64 estimates
+2017-08-01,August 2017,London,Total,120948,Value
+2017-08-01,August 2017,London,Total,2,Proportion of resident population aged 16-64 estimates
+2017-08-01,August 2017,United Kingdom,Male,496901,Value
+2017-08-01,August 2017,United Kingdom,Male,2.4,Proportion of resident population aged 16-64 estimates
+2017-08-01,August 2017,United Kingdom,Female,300793,Value
+2017-08-01,August 2017,United Kingdom,Female,1.4,Proportion of resident population aged 16-64 estimates
+2017-08-01,August 2017,United Kingdom,Total,797694,Value
+2017-08-01,August 2017,United Kingdom,Total,1.9,Proportion of resident population aged 16-64 estimates
+2017-09-01,September 2017,London,Male,68998,Value
+2017-09-01,September 2017,London,Male,2.3,Proportion of resident population aged 16-64 estimates
+2017-09-01,September 2017,London,Female,51775,Value
+2017-09-01,September 2017,London,Female,1.7,Proportion of resident population aged 16-64 estimates
+2017-09-01,September 2017,London,Total,120773,Value
+2017-09-01,September 2017,London,Total,2,Proportion of resident population aged 16-64 estimates
+2017-09-01,September 2017,United Kingdom,Male,497758,Value
+2017-09-01,September 2017,United Kingdom,Male,2.4,Proportion of resident population aged 16-64 estimates
+2017-09-01,September 2017,United Kingdom,Female,302783,Value
+2017-09-01,September 2017,United Kingdom,Female,1.5,Proportion of resident population aged 16-64 estimates
+2017-09-01,September 2017,United Kingdom,Total,800541,Value
+2017-09-01,September 2017,United Kingdom,Total,1.9,Proportion of resident population aged 16-64 estimates
+2017-10-01,October 2017,London,Male,69253,Value
+2017-10-01,October 2017,London,Male,2.3,Proportion of resident population aged 16-64 estimates
+2017-10-01,October 2017,London,Female,51979,Value
+2017-10-01,October 2017,London,Female,1.8,Proportion of resident population aged 16-64 estimates
+2017-10-01,October 2017,London,Total,121232,Value
+2017-10-01,October 2017,London,Total,2,Proportion of resident population aged 16-64 estimates
+2017-10-01,October 2017,United Kingdom,Male,498977,Value
+2017-10-01,October 2017,United Kingdom,Male,2.4,Proportion of resident population aged 16-64 estimates
+2017-10-01,October 2017,United Kingdom,Female,305100,Value
+2017-10-01,October 2017,United Kingdom,Female,1.5,Proportion of resident population aged 16-64 estimates
+2017-10-01,October 2017,United Kingdom,Total,804077,Value
+2017-10-01,October 2017,United Kingdom,Total,1.9,Proportion of resident population aged 16-64 estimates
+2017-11-01,November 2017,London,Male,69564,Value
+2017-11-01,November 2017,London,Male,2.3,Proportion of resident population aged 16-64 estimates
+2017-11-01,November 2017,London,Female,52382,Value
+2017-11-01,November 2017,London,Female,1.8,Proportion of resident population aged 16-64 estimates
+2017-11-01,November 2017,London,Total,121946,Value
+2017-11-01,November 2017,London,Total,2,Proportion of resident population aged 16-64 estimates
+2017-11-01,November 2017,United Kingdom,Male,502388,Value
+2017-11-01,November 2017,United Kingdom,Male,2.4,Proportion of resident population aged 16-64 estimates
+2017-11-01,November 2017,United Kingdom,Female,309076,Value
+2017-11-01,November 2017,United Kingdom,Female,1.5,Proportion of resident population aged 16-64 estimates
+2017-11-01,November 2017,United Kingdom,Total,811464,Value
+2017-11-01,November 2017,United Kingdom,Total,2,Proportion of resident population aged 16-64 estimates
+2017-12-01,December 2017,London,Male,69934,Value
+2017-12-01,December 2017,London,Male,2.3,Proportion of resident population aged 16-64 estimates
+2017-12-01,December 2017,London,Female,52705,Value
+2017-12-01,December 2017,London,Female,1.8,Proportion of resident population aged 16-64 estimates
+2017-12-01,December 2017,London,Total,122639,Value
+2017-12-01,December 2017,London,Total,2.1,Proportion of resident population aged 16-64 estimates
+2017-12-01,December 2017,United Kingdom,Male,508682,Value
+2017-12-01,December 2017,United Kingdom,Male,2.5,Proportion of resident population aged 16-64 estimates
+2017-12-01,December 2017,United Kingdom,Female,315294,Value
+2017-12-01,December 2017,United Kingdom,Female,1.5,Proportion of resident population aged 16-64 estimates
+2017-12-01,December 2017,United Kingdom,Total,823976,Value
+2017-12-01,December 2017,United Kingdom,Total,2,Proportion of resident population aged 16-64 estimates
+2018-01-01,January 2018,London,Male,70446,Value
+2018-01-01,January 2018,London,Male,2.3,Proportion of resident population aged 16-64 estimates
+2018-01-01,January 2018,London,Female,53431,Value
+2018-01-01,January 2018,London,Female,1.8,Proportion of resident population aged 16-64 estimates
+2018-01-01,January 2018,London,Total,123877,Value
+2018-01-01,January 2018,London,Total,2.1,Proportion of resident population aged 16-64 estimates
+2018-01-01,January 2018,United Kingdom,Male,511926,Value
+2018-01-01,January 2018,United Kingdom,Male,2.5,Proportion of resident population aged 16-64 estimates
+2018-01-01,January 2018,United Kingdom,Female,320931,Value
+2018-01-01,January 2018,United Kingdom,Female,1.5,Proportion of resident population aged 16-64 estimates
+2018-01-01,January 2018,United Kingdom,Total,832857,Value
+2018-01-01,January 2018,United Kingdom,Total,2,Proportion of resident population aged 16-64 estimates
+2018-02-01,February 2018,London,Male,70785,Value
+2018-02-01,February 2018,London,Male,2.3,Proportion of resident population aged 16-64 estimates
+2018-02-01,February 2018,London,Female,53903,Value
+2018-02-01,February 2018,London,Female,1.8,Proportion of resident population aged 16-64 estimates
+2018-02-01,February 2018,London,Total,124688,Value
+2018-02-01,February 2018,London,Total,2.1,Proportion of resident population aged 16-64 estimates
+2018-02-01,February 2018,United Kingdom,Male,516428,Value
+2018-02-01,February 2018,United Kingdom,Male,2.5,Proportion of resident population aged 16-64 estimates
+2018-02-01,February 2018,United Kingdom,Female,326351,Value
+2018-02-01,February 2018,United Kingdom,Female,1.6,Proportion of resident population aged 16-64 estimates
+2018-02-01,February 2018,United Kingdom,Total,842779,Value
+2018-02-01,February 2018,United Kingdom,Total,2,Proportion of resident population aged 16-64 estimates
+2018-03-01,March 2018,London,Male,71262,Value
+2018-03-01,March 2018,London,Male,2.3,Proportion of resident population aged 16-64 estimates
+2018-03-01,March 2018,London,Female,54418,Value
+2018-03-01,March 2018,London,Female,1.8,Proportion of resident population aged 16-64 estimates
+2018-03-01,March 2018,London,Total,125680,Value
+2018-03-01,March 2018,London,Total,2.1,Proportion of resident population aged 16-64 estimates
+2018-03-01,March 2018,United Kingdom,Male,522627,Value
+2018-03-01,March 2018,United Kingdom,Male,2.5,Proportion of resident population aged 16-64 estimates
+2018-03-01,March 2018,United Kingdom,Female,332007,Value
+2018-03-01,March 2018,United Kingdom,Female,1.6,Proportion of resident population aged 16-64 estimates
+2018-03-01,March 2018,United Kingdom,Total,854634,Value
+2018-03-01,March 2018,United Kingdom,Total,2.1,Proportion of resident population aged 16-64 estimates
+2018-04-01,April 2018,London,Male,71266,Value
+2018-04-01,April 2018,London,Male,2.3,Proportion of resident population aged 16-64 estimates
+2018-04-01,April 2018,London,Female,54723,Value
+2018-04-01,April 2018,London,Female,1.8,Proportion of resident population aged 16-64 estimates
+2018-04-01,April 2018,London,Total,125989,Value
+2018-04-01,April 2018,London,Total,2.1,Proportion of resident population aged 16-64 estimates
+2018-04-01,April 2018,United Kingdom,Male,528101,Value
+2018-04-01,April 2018,United Kingdom,Male,2.5,Proportion of resident population aged 16-64 estimates
+2018-04-01,April 2018,United Kingdom,Female,338141,Value
+2018-04-01,April 2018,United Kingdom,Female,1.6,Proportion of resident population aged 16-64 estimates
+2018-04-01,April 2018,United Kingdom,Total,866242,Value
+2018-04-01,April 2018,United Kingdom,Total,2.1,Proportion of resident population aged 16-64 estimates
+2018-05-01,May 2018,London,Male,71446,Value
+2018-05-01,May 2018,London,Male,2.4,Proportion of resident population aged 16-64 estimates
+2018-05-01,May 2018,London,Female,55168,Value
+2018-05-01,May 2018,London,Female,1.9,Proportion of resident population aged 16-64 estimates
+2018-05-01,May 2018,London,Total,126614,Value
+2018-05-01,May 2018,London,Total,2.1,Proportion of resident population aged 16-64 estimates
+2018-05-01,May 2018,United Kingdom,Male,535094,Value
+2018-05-01,May 2018,United Kingdom,Male,2.6,Proportion of resident population aged 16-64 estimates
+2018-05-01,May 2018,United Kingdom,Female,345018,Value
+2018-05-01,May 2018,United Kingdom,Female,1.7,Proportion of resident population aged 16-64 estimates
+2018-05-01,May 2018,United Kingdom,Total,880112,Value
+2018-05-01,May 2018,United Kingdom,Total,2.1,Proportion of resident population aged 16-64 estimates
+2018-06-01,June 2018,London,Male,71335,Value
+2018-06-01,June 2018,London,Male,2.3,Proportion of resident population aged 16-64 estimates
+2018-06-01,June 2018,London,Female,54902,Value
+2018-06-01,June 2018,London,Female,1.8,Proportion of resident population aged 16-64 estimates
+2018-06-01,June 2018,London,Total,126237,Value
+2018-06-01,June 2018,London,Total,2.1,Proportion of resident population aged 16-64 estimates
+2018-06-01,June 2018,United Kingdom,Male,534950,Value
+2018-06-01,June 2018,United Kingdom,Male,2.6,Proportion of resident population aged 16-64 estimates
+2018-06-01,June 2018,United Kingdom,Female,346451,Value
+2018-06-01,June 2018,United Kingdom,Female,1.7,Proportion of resident population aged 16-64 estimates
+2018-06-01,June 2018,United Kingdom,Total,881401,Value
+2018-06-01,June 2018,United Kingdom,Total,2.1,Proportion of resident population aged 16-64 estimates
+2018-07-01,July 2018,London,Male,71901,Value
+2018-07-01,July 2018,London,Male,2.4,Proportion of resident population aged 16-64 estimates
+2018-07-01,July 2018,London,Female,55712,Value
+2018-07-01,July 2018,London,Female,1.9,Proportion of resident population aged 16-64 estimates
+2018-07-01,July 2018,London,Total,127613,Value
+2018-07-01,July 2018,London,Total,2.1,Proportion of resident population aged 16-64 estimates
+2018-07-01,July 2018,United Kingdom,Male,539751,Value
+2018-07-01,July 2018,United Kingdom,Male,2.6,Proportion of resident population aged 16-64 estimates
+2018-07-01,July 2018,United Kingdom,Female,352429,Value
+2018-07-01,July 2018,United Kingdom,Female,1.7,Proportion of resident population aged 16-64 estimates
+2018-07-01,July 2018,United Kingdom,Total,892180,Value
+2018-07-01,July 2018,United Kingdom,Total,2.1,Proportion of resident population aged 16-64 estimates
+2018-08-01,August 2018,London,Male,72432,Value
+2018-08-01,August 2018,London,Male,2.4,Proportion of resident population aged 16-64 estimates
+2018-08-01,August 2018,London,Female,56380,Value
+2018-08-01,August 2018,London,Female,1.9,Proportion of resident population aged 16-64 estimates
+2018-08-01,August 2018,London,Total,128812,Value
+2018-08-01,August 2018,London,Total,2.1,Proportion of resident population aged 16-64 estimates
+2018-08-01,August 2018,United Kingdom,Male,544735,Value
+2018-08-01,August 2018,United Kingdom,Male,2.6,Proportion of resident population aged 16-64 estimates
+2018-08-01,August 2018,United Kingdom,Female,359367,Value
+2018-08-01,August 2018,United Kingdom,Female,1.7,Proportion of resident population aged 16-64 estimates
+2018-08-01,August 2018,United Kingdom,Total,904102,Value
+2018-08-01,August 2018,United Kingdom,Total,2.2,Proportion of resident population aged 16-64 estimates
+2018-09-01,September 2018,London,Male,74271,Value
+2018-09-01,September 2018,London,Male,2.4,Proportion of resident population aged 16-64 estimates
+2018-09-01,September 2018,London,Female,58089,Value
+2018-09-01,September 2018,London,Female,2,Proportion of resident population aged 16-64 estimates
+2018-09-01,September 2018,London,Total,132360,Value
+2018-09-01,September 2018,London,Total,2.2,Proportion of resident population aged 16-64 estimates
+2018-09-01,September 2018,United Kingdom,Male,556674,Value
+2018-09-01,September 2018,United Kingdom,Male,2.7,Proportion of resident population aged 16-64 estimates
+2018-09-01,September 2018,United Kingdom,Female,369758,Value
+2018-09-01,September 2018,United Kingdom,Female,1.8,Proportion of resident population aged 16-64 estimates
+2018-09-01,September 2018,United Kingdom,Total,926432,Value
+2018-09-01,September 2018,United Kingdom,Total,2.2,Proportion of resident population aged 16-64 estimates
+2018-10-01,October 2018,London,Male,75937,Value
+2018-10-01,October 2018,London,Male,2.5,Proportion of resident population aged 16-64 estimates
+2018-10-01,October 2018,London,Female,59721,Value
+2018-10-01,October 2018,London,Female,2,Proportion of resident population aged 16-64 estimates
+2018-10-01,October 2018,London,Total,135658,Value
+2018-10-01,October 2018,London,Total,2.3,Proportion of resident population aged 16-64 estimates
+2018-10-01,October 2018,United Kingdom,Male,569907,Value
+2018-10-01,October 2018,United Kingdom,Male,2.7,Proportion of resident population aged 16-64 estimates
+2018-10-01,October 2018,United Kingdom,Female,381221,Value
+2018-10-01,October 2018,United Kingdom,Female,1.8,Proportion of resident population aged 16-64 estimates
+2018-10-01,October 2018,United Kingdom,Total,951128,Value
+2018-10-01,October 2018,United Kingdom,Total,2.3,Proportion of resident population aged 16-64 estimates
+2018-11-01,November 2018,London,Male,77478,Value
+2018-11-01,November 2018,London,Male,2.6,Proportion of resident population aged 16-64 estimates
+2018-11-01,November 2018,London,Female,61388,Value
+2018-11-01,November 2018,London,Female,2.1,Proportion of resident population aged 16-64 estimates
+2018-11-01,November 2018,London,Total,138866,Value
+2018-11-01,November 2018,London,Total,2.3,Proportion of resident population aged 16-64 estimates
+2018-11-01,November 2018,United Kingdom,Male,581218,Value
+2018-11-01,November 2018,United Kingdom,Male,2.8,Proportion of resident population aged 16-64 estimates
+2018-11-01,November 2018,United Kingdom,Female,392080,Value
+2018-11-01,November 2018,United Kingdom,Female,1.9,Proportion of resident population aged 16-64 estimates
+2018-11-01,November 2018,United Kingdom,Total,973298,Value
+2018-11-01,November 2018,United Kingdom,Total,2.3,Proportion of resident population aged 16-64 estimates
+2018-12-01,December 2018,London,Male,79528,Value
+2018-12-01,December 2018,London,Male,2.6,Proportion of resident population aged 16-64 estimates
+2018-12-01,December 2018,London,Female,63651,Value
+2018-12-01,December 2018,London,Female,2.1,Proportion of resident population aged 16-64 estimates
+2018-12-01,December 2018,London,Total,143179,Value
+2018-12-01,December 2018,London,Total,2.4,Proportion of resident population aged 16-64 estimates
+2018-12-01,December 2018,United Kingdom,Male,595224,Value
+2018-12-01,December 2018,United Kingdom,Male,2.9,Proportion of resident population aged 16-64 estimates
+2018-12-01,December 2018,United Kingdom,Female,405254,Value
+2018-12-01,December 2018,United Kingdom,Female,1.9,Proportion of resident population aged 16-64 estimates
+2018-12-01,December 2018,United Kingdom,Total,1000478,Value
+2018-12-01,December 2018,United Kingdom,Total,2.4,Proportion of resident population aged 16-64 estimates
+2019-01-01,January 2019,London,Male,81590,Value
+2019-01-01,January 2019,London,Male,2.7,Proportion of resident population aged 16-64 estimates
+2019-01-01,January 2019,London,Female,65459,Value
+2019-01-01,January 2019,London,Female,2.2,Proportion of resident population aged 16-64 estimates
+2019-01-01,January 2019,London,Total,147049,Value
+2019-01-01,January 2019,London,Total,2.4,Proportion of resident population aged 16-64 estimates
+2019-01-01,January 2019,United Kingdom,Male,602275,Value
+2019-01-01,January 2019,United Kingdom,Male,2.9,Proportion of resident population aged 16-64 estimates
+2019-01-01,January 2019,United Kingdom,Female,416817,Value
+2019-01-01,January 2019,United Kingdom,Female,2,Proportion of resident population aged 16-64 estimates
+2019-01-01,January 2019,United Kingdom,Total,1019092,Value
+2019-01-01,January 2019,United Kingdom,Total,2.4,Proportion of resident population aged 16-64 estimates
+2019-02-01,February 2019,London,Male,82931,Value
+2019-02-01,February 2019,London,Male,2.7,Proportion of resident population aged 16-64 estimates
+2019-02-01,February 2019,London,Female,66856,Value
+2019-02-01,February 2019,London,Female,2.2,Proportion of resident population aged 16-64 estimates
+2019-02-01,February 2019,London,Total,149787,Value
+2019-02-01,February 2019,London,Total,2.5,Proportion of resident population aged 16-64 estimates
+2019-02-01,February 2019,United Kingdom,Male,611150,Value
+2019-02-01,February 2019,United Kingdom,Male,2.9,Proportion of resident population aged 16-64 estimates
+2019-02-01,February 2019,United Kingdom,Female,428515,Value
+2019-02-01,February 2019,United Kingdom,Female,2,Proportion of resident population aged 16-64 estimates
+2019-02-01,February 2019,United Kingdom,Total,1039665,Value
+2019-02-01,February 2019,United Kingdom,Total,2.5,Proportion of resident population aged 16-64 estimates
+2019-03-01,March 2019,London,Male,84524,Value
+2019-03-01,March 2019,London,Male,2.8,Proportion of resident population aged 16-64 estimates
+2019-03-01,March 2019,London,Female,68264,Value
+2019-03-01,March 2019,London,Female,2.3,Proportion of resident population aged 16-64 estimates
+2019-03-01,March 2019,London,Total,152788,Value
+2019-03-01,March 2019,London,Total,2.5,Proportion of resident population aged 16-64 estimates
+2019-03-01,March 2019,United Kingdom,Male,621516,Value
+2019-03-01,March 2019,United Kingdom,Male,3,Proportion of resident population aged 16-64 estimates
+2019-03-01,March 2019,United Kingdom,Female,437879,Value
+2019-03-01,March 2019,United Kingdom,Female,2.1,Proportion of resident population aged 16-64 estimates
+2019-03-01,March 2019,United Kingdom,Total,1059395,Value
+2019-03-01,March 2019,United Kingdom,Total,2.5,Proportion of resident population aged 16-64 estimates
+2019-04-01,April 2019,London,Male,86154,Value
+2019-04-01,April 2019,London,Male,2.8,Proportion of resident population aged 16-64 estimates
+2019-04-01,April 2019,London,Female,69530,Value
+2019-04-01,April 2019,London,Female,2.3,Proportion of resident population aged 16-64 estimates
+2019-04-01,April 2019,London,Total,155684,Value
+2019-04-01,April 2019,London,Total,2.6,Proportion of resident population aged 16-64 estimates
+2019-04-01,April 2019,United Kingdom,Male,633653,Value
+2019-04-01,April 2019,United Kingdom,Male,3,Proportion of resident population aged 16-64 estimates
+2019-04-01,April 2019,United Kingdom,Female,445866,Value
+2019-04-01,April 2019,United Kingdom,Female,2.1,Proportion of resident population aged 16-64 estimates
+2019-04-01,April 2019,United Kingdom,Total,1079519,Value
+2019-04-01,April 2019,United Kingdom,Total,2.6,Proportion of resident population aged 16-64 estimates
+2019-05-01,May 2019,London,Male,87731,Value
+2019-05-01,May 2019,London,Male,2.9,Proportion of resident population aged 16-64 estimates
+2019-05-01,May 2019,London,Female,70827,Value
+2019-05-01,May 2019,London,Female,2.4,Proportion of resident population aged 16-64 estimates
+2019-05-01,May 2019,London,Total,158558,Value
+2019-05-01,May 2019,London,Total,2.6,Proportion of resident population aged 16-64 estimates
+2019-05-01,May 2019,United Kingdom,Male,645070,Value
+2019-05-01,May 2019,United Kingdom,Male,3.1,Proportion of resident population aged 16-64 estimates
+2019-05-01,May 2019,United Kingdom,Female,451955,Value
+2019-05-01,May 2019,United Kingdom,Female,2.2,Proportion of resident population aged 16-64 estimates
+2019-05-01,May 2019,United Kingdom,Total,1097025,Value
+2019-05-01,May 2019,United Kingdom,Total,2.6,Proportion of resident population aged 16-64 estimates
+2019-06-01,June 2019,London,Male,90001,Value
+2019-06-01,June 2019,London,Male,3,Proportion of resident population aged 16-64 estimates
+2019-06-01,June 2019,London,Female,73029,Value
+2019-06-01,June 2019,London,Female,2.4,Proportion of resident population aged 16-64 estimates
+2019-06-01,June 2019,London,Total,163030,Value
+2019-06-01,June 2019,London,Total,2.7,Proportion of resident population aged 16-64 estimates
+2019-06-01,June 2019,United Kingdom,Male,663853,Value
+2019-06-01,June 2019,United Kingdom,Male,3.2,Proportion of resident population aged 16-64 estimates
+2019-06-01,June 2019,United Kingdom,Female,462796,Value
+2019-06-01,June 2019,United Kingdom,Female,2.2,Proportion of resident population aged 16-64 estimates
+2019-06-01,June 2019,United Kingdom,Total,1126649,Value
+2019-06-01,June 2019,United Kingdom,Total,2.7,Proportion of resident population aged 16-64 estimates
+2019-07-01,July 2019,London,Male,91337,Value
+2019-07-01,July 2019,London,Male,3,Proportion of resident population aged 16-64 estimates
+2019-07-01,July 2019,London,Female,75281,Value
+2019-07-01,July 2019,London,Female,2.5,Proportion of resident population aged 16-64 estimates
+2019-07-01,July 2019,London,Total,166618,Value
+2019-07-01,July 2019,London,Total,2.8,Proportion of resident population aged 16-64 estimates
+2019-07-01,July 2019,United Kingdom,Male,673502,Value
+2019-07-01,July 2019,United Kingdom,Male,3.2,Proportion of resident population aged 16-64 estimates
+2019-07-01,July 2019,United Kingdom,Female,469660,Value
+2019-07-01,July 2019,United Kingdom,Female,2.2,Proportion of resident population aged 16-64 estimates
+2019-07-01,July 2019,United Kingdom,Total,1143162,Value
+2019-07-01,July 2019,United Kingdom,Total,2.7,Proportion of resident population aged 16-64 estimates
+2019-08-01,August 2019,London,Male,93562,Value
+2019-08-01,August 2019,London,Male,3.1,Proportion of resident population aged 16-64 estimates
+2019-08-01,August 2019,London,Female,76652,Value
+2019-08-01,August 2019,London,Female,2.6,Proportion of resident population aged 16-64 estimates
+2019-08-01,August 2019,London,Total,170214,Value
+2019-08-01,August 2019,London,Total,2.8,Proportion of resident population aged 16-64 estimates
+2019-08-01,August 2019,United Kingdom,Male,684548,Value
+2019-08-01,August 2019,United Kingdom,Male,3.3,Proportion of resident population aged 16-64 estimates
+2019-08-01,August 2019,United Kingdom,Female,478918,Value
+2019-08-01,August 2019,United Kingdom,Female,2.3,Proportion of resident population aged 16-64 estimates
+2019-08-01,August 2019,United Kingdom,Total,1163466,Value
+2019-08-01,August 2019,United Kingdom,Total,2.8,Proportion of resident population aged 16-64 estimates
+2019-09-01,September 2019,London,Male,95950,Value
+2019-09-01,September 2019,London,Male,3.1,Proportion of resident population aged 16-64 estimates
+2019-09-01,September 2019,London,Female,78358,Value
+2019-09-01,September 2019,London,Female,2.6,Proportion of resident population aged 16-64 estimates
+2019-09-01,September 2019,London,Total,174308,Value
+2019-09-01,September 2019,London,Total,2.9,Proportion of resident population aged 16-64 estimates
+2019-09-01,September 2019,United Kingdom,Male,695388,Value
+2019-09-01,September 2019,United Kingdom,Male,3.3,Proportion of resident population aged 16-64 estimates
+2019-09-01,September 2019,United Kingdom,Female,488012,Value
+2019-09-01,September 2019,United Kingdom,Female,2.3,Proportion of resident population aged 16-64 estimates
+2019-09-01,September 2019,United Kingdom,Total,1183400,Value
+2019-09-01,September 2019,United Kingdom,Total,2.8,Proportion of resident population aged 16-64 estimates
+2019-10-01,October 2019,London,Male,98177,Value
+2019-10-01,October 2019,London,Male,3.2,Proportion of resident population aged 16-64 estimates
+2019-10-01,October 2019,London,Female,80205,Value
+2019-10-01,October 2019,London,Female,2.7,Proportion of resident population aged 16-64 estimates
+2019-10-01,October 2019,London,Total,178382,Value
+2019-10-01,October 2019,London,Total,3,Proportion of resident population aged 16-64 estimates
+2019-10-01,October 2019,United Kingdom,Male,709711,Value
+2019-10-01,October 2019,United Kingdom,Male,3.4,Proportion of resident population aged 16-64 estimates
+2019-10-01,October 2019,United Kingdom,Female,501645,Value
+2019-10-01,October 2019,United Kingdom,Female,2.4,Proportion of resident population aged 16-64 estimates
+2019-10-01,October 2019,United Kingdom,Total,1211356,Value
+2019-10-01,October 2019,United Kingdom,Total,2.9,Proportion of resident population aged 16-64 estimates
+2019-11-01,November 2019,London,Male,100474,Value
+2019-11-01,November 2019,London,Male,3.3,Proportion of resident population aged 16-64 estimates
+2019-11-01,November 2019,London,Female,81550,Value
+2019-11-01,November 2019,London,Female,2.7,Proportion of resident population aged 16-64 estimates
+2019-11-01,November 2019,London,Total,182024,Value
+2019-11-01,November 2019,London,Total,3,Proportion of resident population aged 16-64 estimates
+2019-11-01,November 2019,United Kingdom,Male,721616,Value
+2019-11-01,November 2019,United Kingdom,Male,3.5,Proportion of resident population aged 16-64 estimates
+2019-11-01,November 2019,United Kingdom,Female,510755,Value
+2019-11-01,November 2019,United Kingdom,Female,2.4,Proportion of resident population aged 16-64 estimates
+2019-11-01,November 2019,United Kingdom,Total,1232371,Value
+2019-11-01,November 2019,United Kingdom,Total,3,Proportion of resident population aged 16-64 estimates
+2019-12-01,December 2019,London,Male,101148,Value
+2019-12-01,December 2019,London,Male,3.3,Proportion of resident population aged 16-64 estimates
+2019-12-01,December 2019,London,Female,82667,Value
+2019-12-01,December 2019,London,Female,2.8,Proportion of resident population aged 16-64 estimates
+2019-12-01,December 2019,London,Total,183815,Value
+2019-12-01,December 2019,London,Total,3,Proportion of resident population aged 16-64 estimates
+2019-12-01,December 2019,United Kingdom,Male,724626,Value
+2019-12-01,December 2019,United Kingdom,Male,3.5,Proportion of resident population aged 16-64 estimates
+2019-12-01,December 2019,United Kingdom,Female,515689,Value
+2019-12-01,December 2019,United Kingdom,Female,2.5,Proportion of resident population aged 16-64 estimates
+2019-12-01,December 2019,United Kingdom,Total,1240315,Value
+2019-12-01,December 2019,United Kingdom,Total,3,Proportion of resident population aged 16-64 estimates
+2020-01-01,January 2020,London,Male,100554,Value
+2020-01-01,January 2020,London,Male,3.3,Proportion of resident population aged 16-64 estimates
+2020-01-01,January 2020,London,Female,82350,Value
+2020-01-01,January 2020,London,Female,2.8,Proportion of resident population aged 16-64 estimates
+2020-01-01,January 2020,London,Total,182904,Value
+2020-01-01,January 2020,London,Total,3,Proportion of resident population aged 16-64 estimates
+2020-01-01,January 2020,United Kingdom,Male,720137,Value
+2020-01-01,January 2020,United Kingdom,Male,3.4,Proportion of resident population aged 16-64 estimates
+2020-01-01,January 2020,United Kingdom,Female,517500,Value
+2020-01-01,January 2020,United Kingdom,Female,2.5,Proportion of resident population aged 16-64 estimates
+2020-01-01,January 2020,United Kingdom,Total,1237637,Value
+2020-01-01,January 2020,United Kingdom,Total,3,Proportion of resident population aged 16-64 estimates
+2020-02-01,February 2020,London,Male,100921,Value
+2020-02-01,February 2020,London,Male,3.3,Proportion of resident population aged 16-64 estimates
+2020-02-01,February 2020,London,Female,82491,Value
+2020-02-01,February 2020,London,Female,2.8,Proportion of resident population aged 16-64 estimates
+2020-02-01,February 2020,London,Total,183412,Value
+2020-02-01,February 2020,London,Total,3,Proportion of resident population aged 16-64 estimates
+2020-02-01,February 2020,United Kingdom,Male,716193,Value
+2020-02-01,February 2020,United Kingdom,Male,3.4,Proportion of resident population aged 16-64 estimates
+2020-02-01,February 2020,United Kingdom,Female,517294,Value
+2020-02-01,February 2020,United Kingdom,Female,2.5,Proportion of resident population aged 16-64 estimates
+2020-02-01,February 2020,United Kingdom,Total,1233487,Value
+2020-02-01,February 2020,United Kingdom,Total,2.9,Proportion of resident population aged 16-64 estimates
+2020-03-01,March 2020,London,Male,101039,Value
+2020-03-01,March 2020,London,Male,3.3,Proportion of resident population aged 16-64 estimates
+2020-03-01,March 2020,London,Female,82512,Value
+2020-03-01,March 2020,London,Female,2.8,Proportion of resident population aged 16-64 estimates
+2020-03-01,March 2020,London,Total,183551,Value
+2020-03-01,March 2020,London,Total,3,Proportion of resident population aged 16-64 estimates
+2020-03-01,March 2020,United Kingdom,Male,715473,Value
+2020-03-01,March 2020,United Kingdom,Male,3.4,Proportion of resident population aged 16-64 estimates
+2020-03-01,March 2020,United Kingdom,Female,516223,Value
+2020-03-01,March 2020,United Kingdom,Female,2.5,Proportion of resident population aged 16-64 estimates
+2020-03-01,March 2020,United Kingdom,Total,1231696,Value
+2020-03-01,March 2020,United Kingdom,Total,2.9,Proportion of resident population aged 16-64 estimates
+2020-04-01,April 2020,London,Male,167304,Value
+2020-04-01,April 2020,London,Male,5.4,Proportion of resident population aged 16-64 estimates
+2020-04-01,April 2020,London,Female,130816,Value
+2020-04-01,April 2020,London,Female,4.4,Proportion of resident population aged 16-64 estimates
+2020-04-01,April 2020,London,Total,298120,Value
+2020-04-01,April 2020,London,Total,4.9,Proportion of resident population aged 16-64 estimates
+2020-04-01,April 2020,United Kingdom,Male,1241499,Value
+2020-04-01,April 2020,United Kingdom,Male,5.9,Proportion of resident population aged 16-64 estimates
+2020-04-01,April 2020,United Kingdom,Female,842412,Value
+2020-04-01,April 2020,United Kingdom,Female,4,Proportion of resident population aged 16-64 estimates
+2020-04-01,April 2020,United Kingdom,Total,2083911,Value
+2020-04-01,April 2020,United Kingdom,Total,5,Proportion of resident population aged 16-64 estimates
+2020-05-01,May 2020,London,Male,262139,Value
+2020-05-01,May 2020,London,Male,8.5,Proportion of resident population aged 16-64 estimates
+2020-05-01,May 2020,London,Female,189950,Value
+2020-05-01,May 2020,London,Female,6.4,Proportion of resident population aged 16-64 estimates
+2020-05-01,May 2020,London,Total,452089,Value
+2020-05-01,May 2020,London,Total,7.5,Proportion of resident population aged 16-64 estimates
+2020-05-01,May 2020,United Kingdom,Male,1612687,Value
+2020-05-01,May 2020,United Kingdom,Male,7.7,Proportion of resident population aged 16-64 estimates
+2020-05-01,May 2020,United Kingdom,Female,1035203,Value
+2020-05-01,May 2020,United Kingdom,Female,4.9,Proportion of resident population aged 16-64 estimates
+2020-05-01,May 2020,United Kingdom,Total,2647890,Value
+2020-05-01,May 2020,United Kingdom,Total,6.3,Proportion of resident population aged 16-64 estimates
+2020-06-01,June 2020,London,Male,257454,Value
+2020-06-01,June 2020,London,Male,8.4,Proportion of resident population aged 16-64 estimates
+2020-06-01,June 2020,London,Female,190894,Value
+2020-06-01,June 2020,London,Female,6.4,Proportion of resident population aged 16-64 estimates
+2020-06-01,June 2020,London,Total,448348,Value
+2020-06-01,June 2020,London,Total,7.4,Proportion of resident population aged 16-64 estimates
+2020-06-01,June 2020,United Kingdom,Male,1563922,Value
+2020-06-01,June 2020,United Kingdom,Male,7.5,Proportion of resident population aged 16-64 estimates
+2020-06-01,June 2020,United Kingdom,Female,1018946,Value
+2020-06-01,June 2020,United Kingdom,Female,4.9,Proportion of resident population aged 16-64 estimates
+2020-06-01,June 2020,United Kingdom,Total,2582868,Value
+2020-06-01,June 2020,United Kingdom,Total,6.2,Proportion of resident population aged 16-64 estimates
+2020-07-01,July 2020,London,Male,262509,Value
+2020-07-01,July 2020,London,Male,8.5,Proportion of resident population aged 16-64 estimates
+2020-07-01,July 2020,London,Female,198124,Value
+2020-07-01,July 2020,London,Female,6.6,Proportion of resident population aged 16-64 estimates
+2020-07-01,July 2020,London,Total,460633,Value
+2020-07-01,July 2020,London,Total,7.6,Proportion of resident population aged 16-64 estimates
+2020-07-01,July 2020,United Kingdom,Male,1592186,Value
+2020-07-01,July 2020,United Kingdom,Male,7.6,Proportion of resident population aged 16-64 estimates
+2020-07-01,July 2020,United Kingdom,Female,1050332,Value
+2020-07-01,July 2020,United Kingdom,Female,5,Proportion of resident population aged 16-64 estimates
+2020-07-01,July 2020,United Kingdom,Total,2642518,Value
+2020-07-01,July 2020,United Kingdom,Total,6.3,Proportion of resident population aged 16-64 estimates
+2020-08-01,August 2020,London,Male,270642,Value
+2020-08-01,August 2020,London,Male,8.8,Proportion of resident population aged 16-64 estimates
+2020-08-01,August 2020,London,Female,203303,Value
+2020-08-01,August 2020,London,Female,6.8,Proportion of resident population aged 16-64 estimates
+2020-08-01,August 2020,London,Total,473945,Value
+2020-08-01,August 2020,London,Total,7.8,Proportion of resident population aged 16-64 estimates
+2020-08-01,August 2020,United Kingdom,Male,1617453,Value
+2020-08-01,August 2020,United Kingdom,Male,7.7,Proportion of resident population aged 16-64 estimates
+2020-08-01,August 2020,United Kingdom,Female,1074231,Value
+2020-08-01,August 2020,United Kingdom,Female,5.1,Proportion of resident population aged 16-64 estimates
+2020-08-01,August 2020,United Kingdom,Total,2691684,Value
+2020-08-01,August 2020,United Kingdom,Total,6.4,Proportion of resident population aged 16-64 estimates
+2020-09-01,September 2020,London,Male,273687,Value
+2020-09-01,September 2020,London,Male,8.9,Proportion of resident population aged 16-64 estimates
+2020-09-01,September 2020,London,Female,207065,Value
+2020-09-01,September 2020,London,Female,6.9,Proportion of resident population aged 16-64 estimates
+2020-09-01,September 2020,London,Total,480752,Value
+2020-09-01,September 2020,London,Total,7.9,Proportion of resident population aged 16-64 estimates
+2020-09-01,September 2020,United Kingdom,Male,1605368,Value
+2020-09-01,September 2020,United Kingdom,Male,7.7,Proportion of resident population aged 16-64 estimates
+2020-09-01,September 2020,United Kingdom,Female,1075128,Value
+2020-09-01,September 2020,United Kingdom,Female,5.1,Proportion of resident population aged 16-64 estimates
+2020-09-01,September 2020,United Kingdom,Total,2680496,Value
+2020-09-01,September 2020,United Kingdom,Total,6.4,Proportion of resident population aged 16-64 estimates
+2020-10-01,October 2020,London,Male,267983,Value
+2020-10-01,October 2020,London,Male,8.7,Proportion of resident population aged 16-64 estimates
+2020-10-01,October 2020,London,Female,205271,Value
+2020-10-01,October 2020,London,Female,6.9,Proportion of resident population aged 16-64 estimates
+2020-10-01,October 2020,London,Total,473254,Value
+2020-10-01,October 2020,London,Total,7.8,Proportion of resident population aged 16-64 estimates
+2020-10-01,October 2020,United Kingdom,Male,1551958,Value
+2020-10-01,October 2020,United Kingdom,Male,7.4,Proportion of resident population aged 16-64 estimates
+2020-10-01,October 2020,United Kingdom,Female,1048887,Value
+2020-10-01,October 2020,United Kingdom,Female,5,Proportion of resident population aged 16-64 estimates
+2020-10-01,October 2020,United Kingdom,Total,2600845,Value
+2020-10-01,October 2020,United Kingdom,Total,6.2,Proportion of resident population aged 16-64 estimates
+2020-11-01,November 2020,London,Male,278653,Value
+2020-11-01,November 2020,London,Male,9.1,Proportion of resident population aged 16-64 estimates
+2020-11-01,November 2020,London,Female,213179,Value
+2020-11-01,November 2020,London,Female,7.2,Proportion of resident population aged 16-64 estimates
+2020-11-01,November 2020,London,Total,491832,Value
+2020-11-01,November 2020,London,Total,8.1,Proportion of resident population aged 16-64 estimates
+2020-11-01,November 2020,United Kingdom,Male,1573273,Value
+2020-11-01,November 2020,United Kingdom,Male,7.5,Proportion of resident population aged 16-64 estimates
+2020-11-01,November 2020,United Kingdom,Female,1075901,Value
+2020-11-01,November 2020,United Kingdom,Female,5.1,Proportion of resident population aged 16-64 estimates
+2020-11-01,November 2020,United Kingdom,Total,2649174,Value
+2020-11-01,November 2020,United Kingdom,Total,6.3,Proportion of resident population aged 16-64 estimates
+2020-12-01,December 2020,London,Male,281905,Value
+2020-12-01,December 2020,London,Male,9.2,Proportion of resident population aged 16-64 estimates
+2020-12-01,December 2020,London,Female,216140,Value
+2020-12-01,December 2020,London,Female,7.3,Proportion of resident population aged 16-64 estimates
+2020-12-01,December 2020,London,Total,498045,Value
+2020-12-01,December 2020,London,Total,8.2,Proportion of resident population aged 16-64 estimates
+2020-12-01,December 2020,United Kingdom,Male,1563883,Value
+2020-12-01,December 2020,United Kingdom,Male,7.5,Proportion of resident population aged 16-64 estimates
+2020-12-01,December 2020,United Kingdom,Female,1074020,Value
+2020-12-01,December 2020,United Kingdom,Female,5.1,Proportion of resident population aged 16-64 estimates
+2020-12-01,December 2020,United Kingdom,Total,2637903,Value
+2020-12-01,December 2020,United Kingdom,Total,6.3,Proportion of resident population aged 16-64 estimates
+2021-01-01,January 2021,London,Male,275455,Value
+2021-01-01,January 2021,London,Male,9,Proportion of resident population aged 16-64 estimates
+2021-01-01,January 2021,London,Female,212295,Value
+2021-01-01,January 2021,London,Female,7.1,Proportion of resident population aged 16-64 estimates
+2021-01-01,January 2021,London,Total,487750,Value
+2021-01-01,January 2021,London,Total,8.1,Proportion of resident population aged 16-64 estimates
+2021-01-01,January 2021,United Kingdom,Male,1527223,Value
+2021-01-01,January 2021,United Kingdom,Male,7.3,Proportion of resident population aged 16-64 estimates
+2021-01-01,January 2021,United Kingdom,Female,1058426,Value
+2021-01-01,January 2021,United Kingdom,Female,5.1,Proportion of resident population aged 16-64 estimates
+2021-01-01,January 2021,United Kingdom,Total,2585649,Value
+2021-01-01,January 2021,United Kingdom,Total,6.2,Proportion of resident population aged 16-64 estimates
+2021-02-01,February 2021,London,Male,286025,Value
+2021-02-01,February 2021,London,Male,9.3,Proportion of resident population aged 16-64 estimates
+2021-02-01,February 2021,London,Female,219095,Value
+2021-02-01,February 2021,London,Female,7.4,Proportion of resident population aged 16-64 estimates
+2021-02-01,February 2021,London,Total,505120,Value
+2021-02-01,February 2021,London,Total,8.3,Proportion of resident population aged 16-64 estimates
+2021-02-01,February 2021,United Kingdom,Male,1564979,Value
+2021-02-01,February 2021,United Kingdom,Male,7.5,Proportion of resident population aged 16-64 estimates
+2021-02-01,February 2021,United Kingdom,Female,1088466,Value
+2021-02-01,February 2021,United Kingdom,Female,5.2,Proportion of resident population aged 16-64 estimates
+2021-02-01,February 2021,United Kingdom,Total,2653445,Value
+2021-02-01,February 2021,United Kingdom,Total,6.3,Proportion of resident population aged 16-64 estimates
+2021-03-01,March 2021,London,Male,285459,Value
+2021-03-01,March 2021,London,Male,9.3,Proportion of resident population aged 16-64 estimates
+2021-03-01,March 2021,London,Female,218622,Value
+2021-03-01,March 2021,London,Female,7.3,Proportion of resident population aged 16-64 estimates
+2021-03-01,March 2021,London,Total,504081,Value
+2021-03-01,March 2021,London,Total,8.3,Proportion of resident population aged 16-64 estimates
+2021-03-01,March 2021,United Kingdom,Male,1547211,Value
+2021-03-01,March 2021,United Kingdom,Male,7.4,Proportion of resident population aged 16-64 estimates
+2021-03-01,March 2021,United Kingdom,Female,1083279,Value
+2021-03-01,March 2021,United Kingdom,Female,5.2,Proportion of resident population aged 16-64 estimates
+2021-03-01,March 2021,United Kingdom,Total,2630490,Value
+2021-03-01,March 2021,United Kingdom,Total,6.3,Proportion of resident population aged 16-64 estimates
+2021-04-01,April 2021,London,Male,282641,Value
+2021-04-01,April 2021,London,Male,9.2,Proportion of resident population aged 16-64 estimates
+2021-04-01,April 2021,London,Female,215270,Value
+2021-04-01,April 2021,London,Female,7.2,Proportion of resident population aged 16-64 estimates
+2021-04-01,April 2021,London,Total,497911,Value
+2021-04-01,April 2021,London,Total,8.2,Proportion of resident population aged 16-64 estimates
+2021-04-01,April 2021,United Kingdom,Male,1522818,Value
+2021-04-01,April 2021,United Kingdom,Male,7.3,Proportion of resident population aged 16-64 estimates
+2021-04-01,April 2021,United Kingdom,Female,1066953,Value
+2021-04-01,April 2021,United Kingdom,Female,5.1,Proportion of resident population aged 16-64 estimates
+2021-04-01,April 2021,United Kingdom,Total,2589771,Value
+2021-04-01,April 2021,United Kingdom,Total,6.2,Proportion of resident population aged 16-64 estimates
+2021-05-01,May 2021,London,Male,266337,Value
+2021-05-01,May 2021,London,Male,8.7,Proportion of resident population aged 16-64 estimates
+2021-05-01,May 2021,London,Female,203824,Value
+2021-05-01,May 2021,London,Female,6.8,Proportion of resident population aged 16-64 estimates
+2021-05-01,May 2021,London,Total,470161,Value
+2021-05-01,May 2021,London,Total,7.8,Proportion of resident population aged 16-64 estimates
+2021-05-01,May 2021,United Kingdom,Male,1437127,Value
+2021-05-01,May 2021,United Kingdom,Male,6.9,Proportion of resident population aged 16-64 estimates
+2021-05-01,May 2021,United Kingdom,Female,999322,Value
+2021-05-01,May 2021,United Kingdom,Female,4.8,Proportion of resident population aged 16-64 estimates
+2021-05-01,May 2021,United Kingdom,Total,2436449,Value
+2021-05-01,May 2021,United Kingdom,Total,5.8,Proportion of resident population aged 16-64 estimates
+2021-06-01,June 2021,London,Male,245324,Value
+2021-06-01,June 2021,London,Male,8,Proportion of resident population aged 16-64 estimates
+2021-06-01,June 2021,London,Female,188649,Value
+2021-06-01,June 2021,London,Female,6.3,Proportion of resident population aged 16-64 estimates
+2021-06-01,June 2021,London,Total,433973,Value
+2021-06-01,June 2021,London,Total,7.2,Proportion of resident population aged 16-64 estimates
+2021-06-01,June 2021,United Kingdom,Male,1347415,Value
+2021-06-01,June 2021,United Kingdom,Male,6.4,Proportion of resident population aged 16-64 estimates
+2021-06-01,June 2021,United Kingdom,Female,920198,Value
+2021-06-01,June 2021,United Kingdom,Female,4.4,Proportion of resident population aged 16-64 estimates
+2021-06-01,June 2021,United Kingdom,Total,2267613,Value
+2021-06-01,June 2021,United Kingdom,Total,5.4,Proportion of resident population aged 16-64 estimates
+2021-07-01,July 2021,London,Male,241068,Value
+2021-07-01,July 2021,London,Male,7.9,Proportion of resident population aged 16-64 estimates
+2021-07-01,July 2021,London,Female,187567,Value
+2021-07-01,July 2021,London,Female,6.3,Proportion of resident population aged 16-64 estimates
+2021-07-01,July 2021,London,Total,428635,Value
+2021-07-01,July 2021,London,Total,7.1,Proportion of resident population aged 16-64 estimates
+2021-07-01,July 2021,United Kingdom,Male,1318124,Value
+2021-07-01,July 2021,United Kingdom,Male,6.3,Proportion of resident population aged 16-64 estimates
+2021-07-01,July 2021,United Kingdom,Female,904188,Value
+2021-07-01,July 2021,United Kingdom,Female,4.3,Proportion of resident population aged 16-64 estimates
+2021-07-01,July 2021,United Kingdom,Total,2222312,Value
+2021-07-01,July 2021,United Kingdom,Total,5.3,Proportion of resident population aged 16-64 estimates
+2021-08-01,August 2021,London,Male,230640,Value
+2021-08-01,August 2021,London,Male,7.5,Proportion of resident population aged 16-64 estimates
+2021-08-01,August 2021,London,Female,179466,Value
+2021-08-01,August 2021,London,Female,6,Proportion of resident population aged 16-64 estimates
+2021-08-01,August 2021,London,Total,410106,Value
+2021-08-01,August 2021,London,Total,6.8,Proportion of resident population aged 16-64 estimates
+2021-08-01,August 2021,United Kingdom,Male,1263823,Value
+2021-08-01,August 2021,United Kingdom,Male,6,Proportion of resident population aged 16-64 estimates
+2021-08-01,August 2021,United Kingdom,Female,874267,Value
+2021-08-01,August 2021,United Kingdom,Female,4.2,Proportion of resident population aged 16-64 estimates
+2021-08-01,August 2021,United Kingdom,Total,2138090,Value
+2021-08-01,August 2021,United Kingdom,Total,5.1,Proportion of resident population aged 16-64 estimates
+2021-09-01,September 2021,London,Male,218656,Value
+2021-09-01,September 2021,London,Male,7.1,Proportion of resident population aged 16-64 estimates
+2021-09-01,September 2021,London,Female,171118,Value
+2021-09-01,September 2021,London,Female,5.7,Proportion of resident population aged 16-64 estimates
+2021-09-01,September 2021,London,Total,389774,Value
+2021-09-01,September 2021,London,Total,6.4,Proportion of resident population aged 16-64 estimates
+2021-09-01,September 2021,United Kingdom,Male,1211138,Value
+2021-09-01,September 2021,United Kingdom,Male,5.8,Proportion of resident population aged 16-64 estimates
+2021-09-01,September 2021,United Kingdom,Female,843609,Value
+2021-09-01,September 2021,United Kingdom,Female,4,Proportion of resident population aged 16-64 estimates
+2021-09-01,September 2021,United Kingdom,Total,2054747,Value
+2021-09-01,September 2021,United Kingdom,Total,4.9,Proportion of resident population aged 16-64 estimates
+2021-10-01,October 2021,London,Male,212943,Value
+2021-10-01,October 2021,London,Male,6.9,Proportion of resident population aged 16-64 estimates
+2021-10-01,October 2021,London,Female,165056,Value
+2021-10-01,October 2021,London,Female,5.5,Proportion of resident population aged 16-64 estimates
+2021-10-01,October 2021,London,Total,377999,Value
+2021-10-01,October 2021,London,Total,6.2,Proportion of resident population aged 16-64 estimates
+2021-10-01,October 2021,United Kingdom,Male,1174180,Value
+2021-10-01,October 2021,United Kingdom,Male,5.6,Proportion of resident population aged 16-64 estimates
+2021-10-01,October 2021,United Kingdom,Female,817861,Value
+2021-10-01,October 2021,United Kingdom,Female,3.9,Proportion of resident population aged 16-64 estimates
+2021-10-01,October 2021,United Kingdom,Total,1992041,Value
+2021-10-01,October 2021,United Kingdom,Total,4.8,Proportion of resident population aged 16-64 estimates
+2021-11-01,November 2021,London,Male,205822,Value
+2021-11-01,November 2021,London,Male,6.7,Proportion of resident population aged 16-64 estimates
+2021-11-01,November 2021,London,Female,157457,Value
+2021-11-01,November 2021,London,Female,5.3,Proportion of resident population aged 16-64 estimates
+2021-11-01,November 2021,London,Total,363279,Value
+2021-11-01,November 2021,London,Total,6,Proportion of resident population aged 16-64 estimates
+2021-11-01,November 2021,United Kingdom,Male,1134765,Value
+2021-11-01,November 2021,United Kingdom,Male,5.4,Proportion of resident population aged 16-64 estimates
+2021-11-01,November 2021,United Kingdom,Female,790967,Value
+2021-11-01,November 2021,United Kingdom,Female,3.8,Proportion of resident population aged 16-64 estimates
+2021-11-01,November 2021,United Kingdom,Total,1925732,Value
+2021-11-01,November 2021,United Kingdom,Total,4.6,Proportion of resident population aged 16-64 estimates
+2021-12-01,December 2021,London,Male,198749,Value
+2021-12-01,December 2021,London,Male,6.5,Proportion of resident population aged 16-64 estimates
+2021-12-01,December 2021,London,Female,152701,Value
+2021-12-01,December 2021,London,Female,5.1,Proportion of resident population aged 16-64 estimates
+2021-12-01,December 2021,London,Total,351450,Value
+2021-12-01,December 2021,London,Total,5.8,Proportion of resident population aged 16-64 estimates
+2021-12-01,December 2021,United Kingdom,Male,1096096,Value
+2021-12-01,December 2021,United Kingdom,Male,5.2,Proportion of resident population aged 16-64 estimates
+2021-12-01,December 2021,United Kingdom,Female,767947,Value
+2021-12-01,December 2021,United Kingdom,Female,3.7,Proportion of resident population aged 16-64 estimates
+2021-12-01,December 2021,United Kingdom,Total,1864043,Value
+2021-12-01,December 2021,United Kingdom,Total,4.5,Proportion of resident population aged 16-64 estimates
+2022-01-01,January 2022,London,Male,190633,Value
+2022-01-01,January 2022,London,Male,6.2,Proportion of resident population aged 16-64 estimates
+2022-01-01,January 2022,London,Female,146622,Value
+2022-01-01,January 2022,London,Female,4.9,Proportion of resident population aged 16-64 estimates
+2022-01-01,January 2022,London,Total,337255,Value
+2022-01-01,January 2022,London,Total,5.6,Proportion of resident population aged 16-64 estimates
+2022-01-01,January 2022,United Kingdom,Male,1059853,Value
+2022-01-01,January 2022,United Kingdom,Male,5.1,Proportion of resident population aged 16-64 estimates
+2022-01-01,January 2022,United Kingdom,Female,749102,Value
+2022-01-01,January 2022,United Kingdom,Female,3.6,Proportion of resident population aged 16-64 estimates
+2022-01-01,January 2022,United Kingdom,Total,1808955,Value
+2022-01-01,January 2022,United Kingdom,Total,4.3,Proportion of resident population aged 16-64 estimates
+2022-02-01,February 2022,London,Male,184767,Value
+2022-02-01,February 2022,London,Male,6,Proportion of resident population aged 16-64 estimates
+2022-02-01,February 2022,London,Female,142063,Value
+2022-02-01,February 2022,London,Female,4.8,Proportion of resident population aged 16-64 estimates
+2022-02-01,February 2022,London,Total,326830,Value
+2022-02-01,February 2022,London,Total,5.4,Proportion of resident population aged 16-64 estimates
+2022-02-01,February 2022,United Kingdom,Male,1020122,Value
+2022-02-01,February 2022,United Kingdom,Male,4.9,Proportion of resident population aged 16-64 estimates
+2022-02-01,February 2022,United Kingdom,Female,730843,Value
+2022-02-01,February 2022,United Kingdom,Female,3.5,Proportion of resident population aged 16-64 estimates
+2022-02-01,February 2022,United Kingdom,Total,1750965,Value
+2022-02-01,February 2022,United Kingdom,Total,4.2,Proportion of resident population aged 16-64 estimates
+2022-03-01,March 2022,London,Male,175163,Value
+2022-03-01,March 2022,London,Male,5.7,Proportion of resident population aged 16-64 estimates
+2022-03-01,March 2022,London,Female,134985,Value
+2022-03-01,March 2022,London,Female,4.5,Proportion of resident population aged 16-64 estimates
+2022-03-01,March 2022,London,Total,310148,Value
+2022-03-01,March 2022,London,Total,5.1,Proportion of resident population aged 16-64 estimates
+2022-03-01,March 2022,United Kingdom,Male,971353,Value
+2022-03-01,March 2022,United Kingdom,Male,4.6,Proportion of resident population aged 16-64 estimates
+2022-03-01,March 2022,United Kingdom,Female,698050,Value
+2022-03-01,March 2022,United Kingdom,Female,3.3,Proportion of resident population aged 16-64 estimates
+2022-03-01,March 2022,United Kingdom,Total,1669403,Value
+2022-03-01,March 2022,United Kingdom,Total,4,Proportion of resident population aged 16-64 estimates
+2022-04-01,April 2022,London,Male,168515,Value
+2022-04-01,April 2022,London,Male,5.5,Proportion of resident population aged 16-64 estimates
+2022-04-01,April 2022,London,Female,129230,Value
+2022-04-01,April 2022,London,Female,4.3,Proportion of resident population aged 16-64 estimates
+2022-04-01,April 2022,London,Total,297745,Value
+2022-04-01,April 2022,London,Total,4.9,Proportion of resident population aged 16-64 estimates
+2022-04-01,April 2022,United Kingdom,Male,937399,Value
+2022-04-01,April 2022,United Kingdom,Male,4.5,Proportion of resident population aged 16-64 estimates
+2022-04-01,April 2022,United Kingdom,Female,666525,Value
+2022-04-01,April 2022,United Kingdom,Female,3.2,Proportion of resident population aged 16-64 estimates
+2022-04-01,April 2022,United Kingdom,Total,1603924,Value
+2022-04-01,April 2022,United Kingdom,Total,3.8,Proportion of resident population aged 16-64 estimates
+2022-05-01,May 2022,London,Male,164212,Value
+2022-05-01,May 2022,London,Male,5.3,Proportion of resident population aged 16-64 estimates
+2022-05-01,May 2022,London,Female,127430,Value
+2022-05-01,May 2022,London,Female,4.3,Proportion of resident population aged 16-64 estimates
+2022-05-01,May 2022,London,Total,291642,Value
+2022-05-01,May 2022,London,Total,4.8,Proportion of resident population aged 16-64 estimates
+2022-05-01,May 2022,United Kingdom,Male,921356,Value
+2022-05-01,May 2022,United Kingdom,Male,4.4,Proportion of resident population aged 16-64 estimates
+2022-05-01,May 2022,United Kingdom,Female,647836,Value
+2022-05-01,May 2022,United Kingdom,Female,3.1,Proportion of resident population aged 16-64 estimates
+2022-05-01,May 2022,United Kingdom,Total,1569192,Value
+2022-05-01,May 2022,United Kingdom,Total,3.8,Proportion of resident population aged 16-64 estimates
+2022-06-01,June 2022,London,Male,160066,Value
+2022-06-01,June 2022,London,Male,5.2,Proportion of resident population aged 16-64 estimates
+2022-06-01,June 2022,London,Female,125710,Value
+2022-06-01,June 2022,London,Female,4.2,Proportion of resident population aged 16-64 estimates
+2022-06-01,June 2022,London,Total,285776,Value
+2022-06-01,June 2022,London,Total,4.7,Proportion of resident population aged 16-64 estimates
+2022-06-01,June 2022,United Kingdom,Male,907166,Value
+2022-06-01,June 2022,United Kingdom,Male,4.3,Proportion of resident population aged 16-64 estimates
+2022-06-01,June 2022,United Kingdom,Female,635212,Value
+2022-06-01,June 2022,United Kingdom,Female,3,Proportion of resident population aged 16-64 estimates
+2022-06-01,June 2022,United Kingdom,Total,1542378,Value
+2022-06-01,June 2022,United Kingdom,Total,3.7,Proportion of resident population aged 16-64 estimates
+2022-07-01,July 2022,London,Male,156981,Value
+2022-07-01,July 2022,London,Male,5.1,Proportion of resident population aged 16-64 estimates
+2022-07-01,July 2022,London,Female,125322,Value
+2022-07-01,July 2022,London,Female,4.2,Proportion of resident population aged 16-64 estimates
+2022-07-01,July 2022,London,Total,282303,Value
+2022-07-01,July 2022,London,Total,4.7,Proportion of resident population aged 16-64 estimates
+2022-07-01,July 2022,United Kingdom,Male,896260,Value
+2022-07-01,July 2022,United Kingdom,Male,4.3,Proportion of resident population aged 16-64 estimates
+2022-07-01,July 2022,United Kingdom,Female,631668,Value
+2022-07-01,July 2022,United Kingdom,Female,3,Proportion of resident population aged 16-64 estimates
+2022-07-01,July 2022,United Kingdom,Total,1527928,Value
+2022-07-01,July 2022,United Kingdom,Total,3.7,Proportion of resident population aged 16-64 estimates
+2022-08-01,August 2022,London,Male,159371,Value
+2022-08-01,August 2022,London,Male,5.2,Proportion of resident population aged 16-64 estimates
+2022-08-01,August 2022,London,Female,126878,Value
+2022-08-01,August 2022,London,Female,4.3,Proportion of resident population aged 16-64 estimates
+2022-08-01,August 2022,London,Total,286249,Value
+2022-08-01,August 2022,London,Total,4.7,Proportion of resident population aged 16-64 estimates
+2022-08-01,August 2022,United Kingdom,Male,899621,Value
+2022-08-01,August 2022,United Kingdom,Male,4.3,Proportion of resident population aged 16-64 estimates
+2022-08-01,August 2022,United Kingdom,Female,634575,Value
+2022-08-01,August 2022,United Kingdom,Female,3,Proportion of resident population aged 16-64 estimates
+2022-08-01,August 2022,United Kingdom,Total,1534196,Value
+2022-08-01,August 2022,United Kingdom,Total,3.7,Proportion of resident population aged 16-64 estimates
