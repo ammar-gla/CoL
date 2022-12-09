@@ -64,6 +64,7 @@ paye_pay_aux <- paye_pay_stats %>%
 remove(paye_emp_stats) #do not remove paye_pay_stats as needed for CPIH below
 
 paye_overall_last_month <- format(max(paye_stats$date_day),"%B %Y")
+paye_overall_last_date <- max(paye_stats$date_day)
 
 #### PAYE NUTS2 ----
 paye_nuts2_emp_stats <- readxl::read_excel(path = paste0(OTHERDATA,paye_data_list["overall"]), sheet = "11. Employees (NUTS2)", skip = 6) %>% 
@@ -152,7 +153,8 @@ paye_nuts1age_stats <- paye_nuts1age_emp %>%
   rbind(paye_nuts1age_pay,paye_age_emp_uk,paye_age_pay_uk) %>% 
   pivot_longer(cols="0-17":"Total",names_to = "age_group", values_to = "measure_value") %>% 
   group_by(age_group,geography_name,measure_name) %>% 
-  mutate(p_change_feb20 = case_when( date_day <= as.Date("2020-02-01") ~ NaN,
+  mutate(index_feb20 = (measure_value/ measure_value[date_day == "2020-02-01"]*100),
+         p_change_feb20 = case_when( date_day <= as.Date("2020-02-01") ~ NaN,
                                      date_day > as.Date("2020-02-01") ~ (measure_value - measure_value[ date_day == "2020-02-01"])/(measure_value[ date_day == "2020-02-01"])),
          p_change_yoy = case_when(date_day - min(date_day) < 365 ~ NaN,
                                   date_day - min(date_day) >= 365 ~ (measure_value - lag(measure_value, n= 12))/lag(measure_value, n=12)),
@@ -165,6 +167,7 @@ paye_nuts1age_stats <- paye_nuts1age_emp %>%
 remove(paye_nuts1age_emp,paye_nuts1age_pay,paye_age_emp_uk,paye_age_pay_uk)
 
 paye_age_last_month <- format(max(paye_nuts1age_stats$date_day),"%B %Y")
+paye_age_last_date <- (max(paye_nuts1age_stats$date_day))
 
 
 #...............................................................................
@@ -210,6 +213,7 @@ paye_nuts1ind_stats <- paye_nuts1ind_emp %>%
   rename(date_month=date) %>% 
   group_by(geography_name,industry_name,measure_name) %>% 
   mutate(
+    index_feb20 = (measure_value/ measure_value[date_day == "2020-02-01"]*100),
     p_change_feb20 = case_when( date_day <= as.Date("2020-02-01") ~ NaN,
                                 date_day > as.Date("2020-02-01") ~ (measure_value - measure_value[date_day == "2020-02-01"])/(measure_value[ date_day == "2020-02-01"])),
     p_change_yoy = case_when(date_day - min(date_day) < 365 ~ NaN,
@@ -235,6 +239,7 @@ paye_nuts1ind_stats <- paye_nuts1ind_emp %>%
 remove(paye_nuts1ind_emp,paye_nuts1ind_pay,paye_ind_emp_uk,paye_ind_pay_uk)
 
 paye_ind_last_month <- format(max(paye_nuts1ind_stats$date_day),"%B %Y")
+paye_ind_last_date <- max(paye_nuts1ind_stats$date_day)
 
 #...............................................................................
 #### PAYE by LA ----
@@ -258,6 +263,7 @@ paye_la_stats <-  paye_la_emp_stats %>%
   rbind(paye_la_pay_stats) %>% 
   group_by(geography_name,measure_name) %>% 
   mutate( 
+    index_feb20 = (measure_value/ measure_value[date_day == "2020-02-01"]*100),
     p_change_feb20 = case_when( date_day <= as.Date("2020-02-01") ~ NaN,
                                 date_day > as.Date("2020-02-01") ~ 100*(measure_value - measure_value[ date_day == "2020-02-01"])/(measure_value[ date_day == "2020-02-01"])),
     p_change_yoy = case_when(date_day - min(date_day) < 365 ~ NaN,
@@ -268,3 +274,4 @@ paye_la_stats <-  paye_la_emp_stats %>%
   arrange(geography_name,measure_name,date_day)
 
 paye_la_last_month <- format(max(paye_la_stats$date_day),"%B %Y")
+paye_la_last_date <- max(paye_la_stats$date_day)

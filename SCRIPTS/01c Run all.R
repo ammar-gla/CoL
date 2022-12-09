@@ -6,7 +6,7 @@
 Sys.setenv(NOMIS_API_KEY = "0x01a88c6659d20042f087de2e585cdf3a07708983")
 
 # ACTION: set whether to re-download all datasets, even if already exists
-redownload_all <- TRUE
+redownload_all <- FALSE
 
 # HERE package needed for dynamic pathfinding
 library("here") 
@@ -36,6 +36,6 @@ source(paste0(SUBSCRIPTS,"GLAE_LMU_dataload.r"))
 
 # Produce CoL  markdown
 rmarkdown::render(here::here("SCRIPTS",paste0("01b Content production",".Rmd")),
-                  output_file = paste0("CoL ", format(Sys.Date(),"%d-%m-%Y"), 
+                  output_file = paste0(HTML_OUT,"CoL ", format(Sys.Date(),"%B %Y"), 
                                        ".html"))
 
