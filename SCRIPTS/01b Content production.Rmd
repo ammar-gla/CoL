@@ -1126,7 +1126,8 @@ paye_la_pay_map_data <- paye_la_stats_geo %>%
   paye_la_bubble_stats <- paye_la_stats %>% 
     bind_rows(paye_stats)   %>%  #add London and UK
     group_by(geography_name,measure_name)   %>% # for within-LA stats
-    mutate(measure_value_comp_month = measure_value[date_day==paye_la_pay_comp_month]) %>% 
+    mutate(measure_value_comp_month = measure_value[date_day==paye_la_pay_comp_month],
+           p_change_feb20=p_change_feb20/100) %>% 
     ungroup() %>% 
     pivot_wider(names_from=measure_name,
                 values_from = c(measure_value,measure_value_comp_month,contains("_change"),index_feb20),
