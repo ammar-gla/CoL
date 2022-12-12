@@ -265,9 +265,9 @@ paye_la_stats <-  paye_la_emp_stats %>%
   mutate( 
     index_feb20 = (measure_value/ measure_value[date_day == "2020-02-01"]*100),
     p_change_feb20 = case_when( date_day <= as.Date("2020-02-01") ~ NaN,
-                                date_day > as.Date("2020-02-01") ~ 100*(measure_value - measure_value[ date_day == "2020-02-01"])/(measure_value[ date_day == "2020-02-01"])),
+                                date_day > as.Date("2020-02-01") ~ (measure_value - measure_value[ date_day == "2020-02-01"])/(measure_value[ date_day == "2020-02-01"])),
     p_change_yoy = case_when(date_day - min(date_day) < 365 ~ NaN,
-                             date_day - min(date_day) >= 365 ~ 100*(measure_value - lag(measure_value, n= 12))/lag(measure_value, n=12))) %>% 
+                             date_day - min(date_day) >= 365 ~ (measure_value - lag(measure_value, n= 12))/lag(measure_value, n=12))) %>% 
   clean_names() %>%  
   rename(date_month=date) %>% 
   merge(London_LA_codes,by='geography_name') %>% 
