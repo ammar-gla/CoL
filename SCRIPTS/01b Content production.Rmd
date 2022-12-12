@@ -1023,7 +1023,8 @@ paye_la_pay_map_data <- paye_la_stats_geo %>%
 ``` {r la change yoy, echo=FALSE, out.width='100%',fig.cap = figure_cap}
 
     # Produces interactive and static map of boroughs with change in payrolled employees
-    
+  paye_la_pay_yoy_map_data <- paye_la_pay_map_data %>% 
+    mutate(tooltip= paste0("Change: ", perc_form(p_change_yoy),"%", "\n"))
   ## The below produces both a markdown interactive Leaflet map and a static GGPLOT map ##
 
 
@@ -1033,7 +1034,7 @@ paye_la_pay_map_data <- paye_la_stats_geo %>%
   figure_cap <- paste0("Source: HM Revenue and Customs - Pay As You Earn Real Time Information. Contains Ordnance Survey data Crown copyright and database rights [2015].","<br>","<br>", "Note: Estimates are based on where employees live.")
   
   # Run static map
-  paye_la_pay_yoy_map <- ggplot_map_output(dataset=paye_la_pay_map_data,
+  paye_la_pay_yoy_map <- ggplot_map_output(dataset=paye_la_pay_yoy_map_data,
                                        dt_var="p_change_yoy",
                                        bin_rounding = 2,
                                        diverge_scale = FALSE,
@@ -1044,7 +1045,7 @@ paye_la_pay_map_data <- paye_la_stats_geo %>%
                                        caption_txt=figure_cap)
   
   # Run interactive map and output to markdown
-  leaflet_map_output(dataset=paye_la_pay_map_data,
+  leaflet_map_output(dataset=paye_la_pay_yoy_map_data,
                      dt_var="p_change_yoy",
                      bin_rounding = 2,
                      diverge_scale = FALSE,
@@ -1070,7 +1071,7 @@ paye_la_pay_map_data <- paye_la_stats_geo %>%
     
   ## The below produces both a markdown interactive Leaflet map and a static GGPLOT map ##
   paye_la_pay_level_map_data <- paye_la_pay_map_data %>% 
-  mutate(tooltip = paste0("Level: £",value_form(measure_value,s=4)))
+    mutate(tooltip = paste0("Level: £",value_form(measure_value,s=4)))
 
   # All necessary variables for map
   map_title <- paste0("Nominal median pay","<br>" ,"level (£)")

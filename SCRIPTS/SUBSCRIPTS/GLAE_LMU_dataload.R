@@ -68,6 +68,7 @@ paye_la_stats_geo <- read_sf(here("INPUT","statistical-gis-boundaries-london","E
   rename(geography_name=name) %>%  
   left_join(paye_la_stats,by="geography_name") %>% 
   mutate(p_change_feb20=p_change_feb20*100,
+         p_change_yoy=p_change_yoy*100,
          tooltip= paste0("Change: ", perc_form(p_change_feb20),"%", "\n")) %>% 
   filter(date_day==max(date_day)) %>% 
   st_transform(4326)
