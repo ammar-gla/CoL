@@ -28,6 +28,16 @@ London_LA_codes <-readxl::read_excel(path = paste0(INPUT,"London borough codes.x
   clean_names() %>% 
   rename(geography_name=area)
 
+
+#.............................................................................
+#### London sub-regional mapping ----
+#.............................................................................
+
+lon_subregion_map <-readxl::read_excel(path = here("INPUT","Sub_regional mapping.xlsx"), sheet = "Mapping") %>%
+  clean_names() %>%
+  rename(geography_name=london_borough)
+
+
 #.............................................................................
 #### Labour market data release dates ----
 #.............................................................................

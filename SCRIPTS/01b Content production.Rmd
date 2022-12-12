@@ -129,7 +129,7 @@ pay_yoy_cpih_data <- cpih_pay_stats %>%
          caption = "\nSource: HM Revenue and Customs – Pay As You Earn Real Time Information, ONS.\n\nNote: March 2020 indicated by dotted line.\nInflation measure does not account for region-specific price changes. Sign of inflation rates has been \nreversed (higher inflation rates are associated with lower real pay growth).")+
     theme(plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)))
   
-  save_GLA_plot(plot_name = "real_nom_yoy_chart",w=10,h=8)
+  save_GLA_plot(plot_name = "real_nom_yoy_chart",w=12,h=5)
   
   # Plotly chart
   LMU_plotly_settings(ch_name = real_nom_yoy_chart,
@@ -823,7 +823,7 @@ pay_3o3_cpih_data <- cpih_pay_stats %>%
                           "\n\nNote: Estimates are based on where employees live.",
                           " Excludes sectors with less than 1% of workforce.",
                           "\nVertical line indicates level of median pay in London in ",paye_ind_pay_comp_month_form,",",
-                          "\nhorizontal line indicates change in London median pay ",paye_ind_pay_comp_month_form,"-",paye_ind_last_month))+
+                          "horizontal line indicates change in London median pay ",paye_ind_pay_comp_month_form,"-",paye_ind_last_month))+
     theme(plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)))
   
   # Add text labels separately as plotly does not support them
@@ -853,7 +853,7 @@ pay_3o3_cpih_data <- cpih_pay_stats %>%
                           "<br>",
                        "Vertical line indicates level of median pay in London in ",paye_ind_pay_comp_month_form,",",
                           "<br>",
-                       "horizontal line indicates change in London median pay ",paye_ind_pay_comp_month_form,"-",paye_ind_last_month)
+                       " horizontal line indicates change in London median pay ",paye_ind_pay_comp_month_form,"-",paye_ind_last_month)
 
 #### Save csv file of data for publication replication by Daryl
 # 
@@ -919,9 +919,10 @@ paye_ind_emp_v_pay <- paye_nuts1ind_bubble_stats %>%
   labs(title =  paste0("Employee growth vs. median pay growth, London"),
        subtitle = paste0("Growth from ",paye_ind_pay_comp_month_form, " to ",paye_ind_last_month ,"; bubble size represents size of sector"),
        caption = paste0("\nSource: HM Revenue and Customs - Pay As You Earn Real Time Information.",
-                        "\n\nNote: Estimates are based on where employees live. Excludes sectors with less than 1% of workforce.",
+                        "\n\nNote: Estimates are based on where employees live.",
+                        "Excludes sectors with less than 1% of workforce.",
                         "\nVertical line indicates change in London employees ",paye_ind_pay_comp_month_form,"-",paye_ind_last_month,",",
-                        "\nhorizontal line indicates change in London median pay ",paye_ind_pay_comp_month_form,"-",paye_ind_last_month))+
+                        " horizontal line indicates change in London median pay ",paye_ind_pay_comp_month_form,"-",paye_ind_last_month))+
   theme(plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)))
 
   # Add text labels separately as plotly does not support them
@@ -1131,10 +1132,12 @@ paye_la_pay_map_data <- paye_la_stats_geo %>%
     pivot_wider(names_from=measure_name,
                 values_from = c(measure_value,measure_value_comp_month,contains("_change"),index_feb20),
                 names_glue = "{measure_name}_{.value}") %>% 
+    left_join(lon_subregion_map,by="geography_name") %>% 
     arrange(date_day,geography_name)
   
   # Chart functions
-  pal <- gla_pal(n=1)
+  pal <- setNames(gla_pal(palette_name = "light",n=2,main_colours = c("blue","purple")),
+                  nm=c("Inner","Outer"))
   pal_lines <- gla_pal(n=1,main_colours = "ldnpink")
   
   # Bubbles are size of industry employees, values are growth vs. level in pay
@@ -1146,14 +1149,18 @@ paye_la_pay_map_data <- paye_la_stats_geo %>%
                aes(x=median_pay_measure_value_comp_month,
                    y=median_pay_p_change_feb20,
                    size=emps_measure_value,
+                   color=inner_outer,
+                   fill=inner_outer,
                    text= paste0(geography_name,"\n",
                                 "Feb '20 pay level: £",value_form(median_pay_measure_value_comp_month),"\n",
                                 "Pay growth: ",perc_form(100*median_pay_p_change_feb20),"%","\n",
                                 "Employees: ",value_form(emps_measure_value))),
-               color=pal,
-               fill=pal,
+               
                alpha=0.6)+
-    scale_size(range = c(3, 10)) +
+    scale_size(range = c(3, 10),
+                      guide  = "none") +
+    scale_color_manual(values=pal)+
+    scale_fill_manual(values=pal)+
     geom_vline(data = . %>% filter(geography_name=="London"),
                aes(xintercept = median_pay_measure_value_comp_month),
                size = 1 * mm_to_pt,
@@ -1168,13 +1175,13 @@ paye_la_pay_map_data <- paye_la_stats_geo %>%
                        limits = c(0.09,0.16)) +
     scale_x_continuous(expand = expansion( mult = c(0.05,0.05)),
                        labels = comma_format(prefix = "£")) +
-    theme(legend.position = "none",
-          plot.margin = unit(c(1,1,1,1), "cm"))+
+    theme(plot.margin = unit(c(1,1,1,1), "cm"))+
     labs(title =  paste0("Median pay level vs. median pay growth, ",paye_la_pay_comp_month_form,", London boroughs"),
          subtitle = paste0("Growth to ",paye_ind_last_month,"; bubble size represents employees in borough"),
          caption = paste0("\nSource: HM Revenue and Customs - Pay As You Earn Real Time Information.",
                           "\n\nNote: Estimates are based on where employees live. Excludes City of London.",
-                          "\nVertical line indicates level of median pay in London in ",paye_la_pay_comp_month_form,",","\nhorizontal line indicates change in London median pay ",paye_la_pay_comp_month_form,"-",paye_ind_last_month))+
+                          "\nVertical line indicates level of median pay in London in ",paye_la_pay_comp_month_form,",",
+                          " horizontal line indicates change in London median pay ",paye_la_pay_comp_month_form,"-",paye_ind_last_month))+
     theme(plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)))
   
   # Add text labels separately as plotly does not support them
@@ -1220,7 +1227,8 @@ paye_la_pay_map_data <- paye_la_stats_geo %>%
 
 
 # Chart functions
-pal <- gla_pal(n=1)
+pal <- setNames(gla_pal(palette_name = "light",n=2,main_colours = c("blue","purple")),
+                  nm=c("Inner","Outer"))
 pal_lines <- gla_pal(n=1,main_colours = "ldnpink")
 
 
@@ -1233,14 +1241,17 @@ pal_lines <- gla_pal(n=1,main_colours = "ldnpink")
                aes(x=emps_p_change_feb20,
                    y=median_pay_p_change_feb20,
                    size=emps_measure_value,
+                   color=inner_outer,
+                   fill=inner_outer,
                    text= paste0(geography_name,"\n",
                                 "Employee growth: ",perc_form(100*emps_p_change_feb20),"%","\n",
                                 "Pay growth: ",perc_form(100*median_pay_p_change_feb20),"%","\n",
                                 "Employees: ",value_form(emps_measure_value))),
-               color=pal,
-               fill=pal,
                alpha=0.6)+
-    scale_size(range = c(3, 10)) +
+    scale_size(range = c(3, 10),
+                      guide  = "none") +
+    scale_color_manual(values=pal)+
+    scale_fill_manual(values=pal)+
     geom_vline(data = . %>% filter(geography_name=="London"),
                aes(xintercept = emps_p_change_feb20),
                size = 1 * mm_to_pt,
@@ -1255,13 +1266,13 @@ pal_lines <- gla_pal(n=1,main_colours = "ldnpink")
                        limits = c(0.09,0.16)) +
     scale_x_continuous(expand = expansion( mult = c(0.05,0.05)),
                        labels = percent_format(accuracy = 1)) +
-    theme(legend.position = "none",
-          plot.margin = unit(c(1,1,1,1), "cm"))+
+    theme(plot.margin = unit(c(1,1,1,1), "cm"))+
     labs(title =  paste0("Employee growth vs. median pay growth, London boroughs"),
          subtitle = paste0("Growth from ",paye_la_pay_comp_month_form, " to ",paye_la_last_month ,"; bubble size represents employees in borough"),
          caption = paste0("\nSource: HM Revenue and Customs - Pay As You Earn Real Time Information.",
                           "\n\nNote: Estimates are based on where employees live. Excludes City of London.",
-                          "\nVertical line indicates level of median pay in London in ",paye_la_pay_comp_month_form,",","\nhorizontal line indicates change in London median pay ",paye_la_pay_comp_month_form,"-",paye_ind_last_month))+
+                          "\nVertical line indicates level of median pay in London in ",paye_la_pay_comp_month_form,",",
+                          " horizontal line indicates change in London median pay ",paye_la_pay_comp_month_form,"-",paye_ind_last_month))+
     theme(plot.caption = element_text(color = rgb(166,166,166,maxColorValue = 255)))
   
   # Add text labels separately as plotly does not support them
